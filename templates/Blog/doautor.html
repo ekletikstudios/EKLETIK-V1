@@ -1,0 +1,48 @@
+{% extends 'geral.html' %}
+{% load static from staticfiles %}
+
+
+{% block theme-css %}
+<link rel="stylesheet" href="{% static "css/geral.css" %}">
+{% endblock theme-css %}
+{% block theme-js %}
+	<script src="{% static "js/geral.js" %}"></script>
+{% endblock theme-js %}
+
+
+
+{% block body %}
+{% for artigo in artigos %}
+    <div id="ek-blog" class="ek-bg-section">
+  <div class="container">
+    <div class="row animate-box row-pb-md" data-animate-effect="fadeInUp">
+      <div class="col-md-8 col-md-offset-2 text-left ek-heading">
+        <span class="text-center">{{ artigo.data }}</span>
+        <h2 class="text-center">{{ artigo.titulo }}</h2>
+        <p class="text-center">Escrito por <kbd>{{ artigo.autor }}</kbd></p>
+
+          {% if artigo.status != 'p' %}
+              <p class="text-center">
+              <span>{{ artigo.get_status_display }}</span>
+              </p>
+          {% endif %}
+      </div>
+    </div>
+
+    {% if artigo.richmedia %}
+        <div class="col-md-8 col-md-offset-2 animate-box" data-animate-effect="fadeInUp">
+            {{ artigo.artigo | safe | linebreaks}}
+        </div>
+
+    {% else %}
+
+        <div class="col-md-8 col-md-offset-2 animate-box" data-animate-effect="fadeInUp">
+            {{ artigo.artigo | linebreaks }}
+        </div>
+    {% endif %}
+
+  </div>
+</div>
+<hr>
+{% endfor %}
+{% endblock body %}

@@ -1,0 +1,213 @@
+{% extends 'geral.html' %}
+{% load static from staticfiles %}
+
+{% block theme-css %}
+<link rel="stylesheet" href="{% static "css/main.css" %}">
+{% endblock theme-css %}
+
+{% block header %}
+<header id="ek-header" class="ek-cover" role="banner" style="background-image:url({% static "images/hero-minified.jpg" %});" data-stellar-background-ratio="0.5">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <div class="display-t">
+          <div class="display-tc animate-box" data-animate-effect="fadeInUp">
+            <h1 class="mb30">Algoritmos, metáforas,<br>soluções e sistemas.</h1>
+            <p>
+              <a href="https://vimeo.com/113823235" class="btn btn-primary link-watch popup-vimeo">Video</a>
+                <em class="or">ou</em>
+                <a href="{% url 'empresa' %}" class="link-watch">Sabe Mais</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+{% endblock header %}
+
+{% block projectos %}
+    <div id="ek-project">
+  <div class="container">
+    <div class="row row-pb-md">
+      <div class="col-md-8 col-md-offset-2 text-left ek-heading  animate-box">
+        <span class="text-center">Anda Ver a Oficina</span>
+        <h2 class="text-center">Projectos</h2>
+        <p class="text-center">Empresas, agências, profissionais individuais e tudo pelo meio.</p>
+      </div>
+    </div>
+
+    <div class="row">
+        {% for projecto in port %}
+            {% if forloop.counter <= 3 %}
+      <div class="col-md-4 col-sm-6 ek-project animate-box" data-animate-effect="fadeIn">
+        <a href="#"><img src="{{projecto.capa.url}}" alt="Imagem de capa de {{projecto.titulo}}" class="img-responsive">
+          <div class="ek-copy">
+            <h3>{{ projecto.titulo }}</h3>
+            <p>{{ projecto.tipo }} | {{ projecto.cliente }}</p>
+          </div>
+        </a>
+      </div>
+            {% endif %}
+        {% endfor %}
+
+    </div>
+  </div>
+
+</div>
+{% endblock projectos %}
+
+{% block servicos %}
+<div id="ek-services" class="ek-bg-section border-bottom">
+  <div class="container">
+    <div class="row row-pb-md">
+      <div class="col-md-8 col-md-offset-2 text-left animate-box" data-animate-effect="fadeInUp">
+        <div class="ek-heading">
+          <span class="text-center">Experiência à grosso</span>
+          <h2 class="text-center">Engenharias</h2>
+
+          <p class="text-center">Fazemos da internet a sua segunda casa. Uma alavanca para os seus negócios.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 col-sm-6 ">
+        <div class="feature-center animate-box" data-animate-effect="fadeInUp">
+          <span class="icon">
+            <i class="icon-paper"></i>
+          </span>
+          <h3>Design</h3>
+          <p>Desde os rabiscos em papel aos protótipos digitais, ajudámo-lo a dar forma às suas ideias e a materializar a sua visão.</p>
+          <p><a href="#">Saiba mais</a></p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 ">
+        <div class="feature-center animate-box" data-animate-effect="fadeInUp">
+          <span class="icon">
+            <i class="icon-code"></i>
+          </span>
+          <h3>Desenvolvimento</h3>
+          <p>Sejam projectos em idiomas humanos ou em linguagens de programação, iremos guiá-lo seguramente à consolidação do seu projecto.</p>
+          <p><a href="#">Saiba mais</a></p>
+        </div>
+      </div>
+      <div class="clearfix visible-sm-block"></div>
+      <div class="col-md-4 col-sm-6 ">
+        <div class="feature-center animate-box" data-animate-effect="fadeInUp">
+          <span class="icon">
+            <i class="icon-server"></i>
+          </span>
+          <h3>Alojamento</h3>
+          <p>Tiramos a massada à gestão do seu negócio online. Mantenha o foco no que sabe fazer melhor e nós o ajudamos com o resto.</p>
+          <p><a href="#">Saiba mais</a></p>
+        </div>
+      </div>
+
+      <div class="clearfix visible-md-block"></div>
+
+    </div>
+  </div>
+</div>
+{% endblock servicos %}
+
+{% block parceiros-pending %}
+<div id="ek-counter">
+  <div class="container">
+
+    <div class="row animate-box" data-animate-effect="fadeInUp">
+      <div class="col-md-8 col-md-offset-2 text-left ek-heading">
+        <span class="text-center">Duas mãos lavam o rosto</span>
+        <h2 class="text-center">Nossos Parceiros</h2>
+        <p class="text-center">Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div class="col-md-3 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
+        <div class="feature-center">
+          <span class="icon">
+            <i class="ti-download"></i>
+          </span>
+          <span class="counter"><span class="js-counter" data-from="0" data-to="15" data-speed="1500" data-refresh-interval="50">Luzeiros</span></span>
+          <span class="counter-label">Online Media</span>
+
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
+        <div class="feature-center">
+            <span class="icon">
+              <i class="ti-face-smile"></i>
+            </span>
+            <span class="counter"><span class="js-counter" data-from="0" data-to="120" data-speed="1500" data-refresh-interval="50">Azinca</span></span>
+            <span class="counter-label">Programação</span>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
+          <div class="feature-center">
+            <span class="icon">
+              <i class="ti-briefcase"></i>
+            </span>
+            <span class="counter"><span class=" js-counter" data-from="0" data-to="90" data-speed="1500" data-refresh-interval="50">Sonzito</span></span>
+            <span class="counter-label">Música Livre</span>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
+          <div class="feature-center">
+            <span class="icon">
+              <i class="ti-time"></i>
+            </span>
+            <span class="counter">
+              <span class="js-counter" data-from="0" data-to="12" data-speed="1500" data-refresh-interval="50">AngoApp</span>
+            </span>
+            <span class="counter-label">Aplicações</span>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+</div><hr>
+{% endblock parceiros-pending %}
+
+{% block blogue%}
+<div id="ek-blog" class="ek-bg-section">
+  <div class="container">
+    <div class="row animate-box row-pb-md" data-animate-effect="fadeInUp">
+      <div class="col-md-8 col-md-offset-2 text-left ek-heading">
+        <span class="text-center">Anda Ler Um Bocado</span>
+        <h2 class="text-center">Articulados</h2>
+        <p class="text-center">Para as exauridas horas entre a compilação e a frustração.</p>
+      </div>
+    </div>
+
+    <div class="row">
+
+    {% for artigo in artigos %}
+    {% if forloop.counter <= 3 %}
+      <div class="col-md-4 col-sm-4 animate-box" data-animate-effect="fadeInUp">
+        <a href="{% url 'artigo' artigo.titulo %}">
+        <div class="ek-post">
+          <span class="ek-date">{{ artigo.data }}</span>
+          <h3>{{ artigo.titulo }}</h3>
+          <p>{{ artigo.artigo | slice:"80" }} [...]</p>
+          <p class="author"><img src="{{ artigo.autor.perfil.url }}" alt="Imagem de {{autor}}"> <cite>{{ artigo.autor.nome }}</cite></p>
+        </div>
+        </a>
+      </div>
+
+    {% endif %}
+    {% endfor %}
+
+    </div>
+  </div>
+</div>
+{% endblock blogue%}
+
+
+
+
+{% block theme-js %}
+	<script src="{% static "js/main.js" %}"></script>
+{% endblock theme-js %}

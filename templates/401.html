@@ -1,0 +1,38 @@
+{% extends 'geral.html' %}
+{% load static from staticfiles %}
+{% block mainlink %}<div id="ek-logo"><a href="{% url 'home' %}">::<span>401</span> </a></div>{% endblock mainlink %}
+
+
+{% block title %}
+    - {{ pagina }}
+{% endblock title %}
+
+{% block theme-css %}
+<link rel="stylesheet" href="{% static "css/geral.css" %}">
+{% endblock theme-css %}
+{% block theme-js %}
+	<script src="{% static "js/geral.js" %}"></script>
+{% endblock theme-js %}
+
+{% block call-to-action %}
+{% endblock %}
+
+
+
+{%block header%}
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  <div class="container">
+    <div class="alert alert-dismissable" role="alert">
+      <h2><kbd>Erro: 401</kbd></h2>
+      <p>O recurso que solicitou não está disponível para a sua visualização.<br></p><hr>
+      <p>Para ter acesso ao recurso que solicitou será preciso autenticar a sua conexão.</p><hr>
+      <p>Caso não possua os credenciais necessários, volte à <a href="{% url 'home' %}"><kbd>página inicial</kbd></a>.</p><hr>
+    </div>
+  </div>
+
+{%endblock%}

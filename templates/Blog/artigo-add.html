@@ -1,0 +1,43 @@
+{% extends 'geral.html' %}
+{% load static from staticfiles %}
+
+
+{% block theme-css %}
+<link rel="stylesheet" href="{% static "css/geral.css" %}">
+{% endblock theme-css %}
+{% block theme-js %}
+	<script src="{% static "js/geral.js" %}"></script>
+{% endblock theme-js %}
+
+
+
+
+
+{% block blogue %}
+
+<form method="POST">
+{% csrf_token %}
+<div id="ek-blog" class="ek-bg-section">
+      <div class="container">
+        <div class="row animate-box row-pb-md" data-animate-effect="fadeInUp">
+          <div class="col-md-8 col-md-offset-2 text-center ek-heading">
+              <h3 class="text-center"><span>Título</span>{{ form.titulo }}</h3>
+              <hr>
+              <h5 class="text-center"><span>Autor</span>{{ form.autor }}</h5>
+              <hr>
+              <h4 class="text-center"><span>Destacar? {{ form.destaque }} | Richmedia? {{ form.richmedia }}</span></h4>
+              <hr>
+              <h4 class="text-center">{{ form.artigo }}</h4>
+              <hr>
+              <button type="submit" class="save btn btn-primary">Adicionar o artigo ao site</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+</form>
+{% endblock %}
+
+
+{% block call-to-action %}
+{% endblock %}

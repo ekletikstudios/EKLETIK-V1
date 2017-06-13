@@ -1,0 +1,67 @@
+{% extends 'geral.html' %}
+{% load static from staticfiles %}
+
+
+{% block theme-css %}
+<link rel="stylesheet" href="{% static "css/geral.css" %}">
+{% endblock theme-css %}
+
+{% block theme-js %}
+	<script src="{% static "js/geral.js" %}"></script>
+{% endblock theme-js %}
+
+
+{% block title %}
+— {{pagina}}
+{% endblock title %}
+
+{% block servicos %}
+<div id="ek-services" class="ek-bg-section border-bottom">
+  <div class="container">
+    <div class="row row-pb-md">
+      <div class="col-md-8 col-md-offset-2 text-left animate-box" data-animate-effect="fadeInUp">
+        <div class="ek-heading">
+          <span class=""></span>
+          <h2 class="">Quem Somos</h2>
+          <p class="">A Ekletik Studios é uma empresa do ramo das tecnologias de informação e comunicação,
+              voltada à gestão, promoção e ensino das mesmas. <br>
+              É missão da Ekletik ajudar empresas e empreendedores a criar e/ou manter uma presença
+              sólida e próspera na internet.
+          </p>
+        </div>
+
+        <div class="ek-heading">
+        <span class=""></span>
+        <h2 class="">Visão &amp Valores</h2>
+            <p class="">Na Ekletik, queremos ajudá-lo, quer represente um pequeno negócio,
+              uma agência criativa, ou caso seja um artista à procura de melhorar ou estabelecer a sua imagemonline.
+              Nós o ajudaremos a fazer da internet a sua segunda casa por meio das nossas ferramentas web e diversos recursos de gestão.
+            </p>
+
+            <span>Comunicação</span>
+            <p class="">Vá, nem sempre o cliente está com a razão. Por isso, procuramos
+                dialogar com o cliente a fim de estar sempre a par das suas exigências e expectativas.
+            </p>
+
+            <span>Lealdade</span>
+            <p>Aqui na Ekletik nós acreditamos que um trabalho bem feito fala por si mesmo.
+                Nós temos grande prazer em providenciar serviços de primeira classe aos atodos os nossos clientes.
+                Se ao acaso não nos for possível dar solução ao seu pedido,teremos todo gosto em recomendá-lo às melhores agências no mercado.</p>
+
+            <span>Pontualidade</span>
+            <p>Tal como outras agências no sector, nós nos habituámos a trabalhar sobpressão.
+                Não queremos com isso dizer que somos excelentes a procrastinar, porém, no
+                que tange aos projectos dos nossos clientes, nos esforçamos sempre para que os ponteiros nos sejam favoráveis.
+            </p>
+        </div>
+
+
+      </div>
+    </div>
+
+  </div>
+</div>
+{% endblock servicos %}
+
+{% block body %}
+{% endblock body %}

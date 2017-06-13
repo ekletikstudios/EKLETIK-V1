@@ -1,0 +1,107 @@
+{% extends 'geral.html' %}
+{% load static from staticfiles %}
+
+
+{% block title %}
+— {{pagina}}
+{% endblock title %}
+
+
+{% block theme-css %}
+<link rel="stylesheet" href="{% static "css/geral.css" %}">
+{% endblock theme-css %}
+
+{% block theme-js %}
+	<script src="{% static "js/geral.js" %}"></script>
+{% endblock theme-js %}
+
+{% block body %}
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1 class="text-center"><kbd>Esta página está em manutenção</kbd></h1>
+    <br>
+    <br>
+    <br>
+    <br>
+{% endblock %}
+
+{% block body-1 %}
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="fh5co-contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-5 col-md-push-1 animate-box">
+
+					<div class="ek-contact-info">
+						<h3>Informação de Contacto</h3>
+						<ul>
+							<li class="address">Rua Rainha Ginga, <br> Luanda, Angola</li>
+							<li class="phone"><a href="tel://1234567920">Telefone</a></li>
+							<li class="email"><a href="mailto:contacto@ekletik.com">Email</a></li>
+							<li class="url"><a href="https://ekletik.com">Website</a></li>
+						</ul>
+					</div>
+
+				</div>
+				<div class="col-md-6 animate-box">
+					<form action="/" method="post">
+                        {% csrf_token %}
+						<div class="row form-group">
+							<div class="col-md-6">
+								<label for="fname">Nome</label>
+								<input type="text" id="fname" class="form-control" placeholder="Nome">
+							</div>
+							<div class="col-md-6">
+								<label for="lname">Sobrenome</label>
+								<input type="text" id="lname" class="form-control" placeholder="Sobrenome">
+							</div>
+						</div>
+
+						<div class="row form-group">
+							<div class="col-md-12">
+								<label for="email">Email</label>
+								<input type="text" id="email" class="form-control" placeholder="Correio electrônico">
+							</div>
+						</div>
+
+						<div class="row form-group">
+							<div class="col-md-12">
+								<label for="subject">Assunto</label>
+								<input type="text" id="subject" class="form-control" placeholder="Assunto da mensagem">
+							</div>
+						</div>
+
+						<div class="row form-group">
+							<div class="col-md-12">
+								<label for="message">Menssagem</label>
+								<textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Escreva aqui a sua mensagem para nós..."></textarea>
+							</div>
+						</div>
+						<div class="form-group">
+							<input type="submit" value="Enviar" class="btn btn-lg btn-primary">
+						</div>
+
+					</form>
+				</div>
+			</div>
+
+		</div>
+	</div>
+    <br>
+    <br>
+    <br>
+
+
+{% endblock %}

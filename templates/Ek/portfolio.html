@@ -1,0 +1,49 @@
+{% extends 'geral.html' %}
+{% load static from staticfiles %}
+
+{% block title %}
+— {{pagina}}
+{% endblock title %}
+
+{% block theme-css %}
+<link rel="stylesheet" href="{% static "css/geral.css" %}">
+{% endblock theme-css %}
+
+{% block theme-js %}
+	<script src="{% static "js/geral.js" %}"></script>
+{% endblock theme-js %}
+
+
+
+{% block body %}
+
+    <div id="ek-project">
+		<div class="container">
+			<div class="row row-pb-md">
+				<div class="col-md-8 col-md-offset-2 text-left ek-heading  animate-box">
+					<span class="text-center">No Que Andamos a Trabalharar</span>
+					<h2 class="text-center">Projectos Quentes</h2>
+					<p class="text-center">Empresas, agências, profissionais individuais e tudo pelo meio.</p>
+				</div>
+			</div>
+
+			<div class="row">
+
+                {% for projecto in projectos %}
+
+				<div class="col-md-4 col-sm-6 ek-project animate-box" data-animate-effect="fadeIn">
+					<a href="{% url 'portfolioItem' projecto.nome %}"><img src="{{ projecto.capa.url }}" alt="" class="img-responsive">
+						<div class="ek-copy">
+							<h3>{{ projecto.titulo }}</h3>
+							<p>{{ projecto.tipo }} | {{ projecto.cliente }}</p>
+						</div>
+					</a>
+				</div>
+
+                {% endfor %}
+
+			</div>
+		</div>
+
+	</div>
+{% endblock body %}

@@ -1,0 +1,14 @@
+{% extends 'geral.html' %}
+{% load static from staticfiles %}
+
+
+{% block theme-css %}
+<link rel="stylesheet" href="{% static "css/geral.css" %}">
+{% endblock theme-css %}
+{% block theme-js %}
+	<script src="{% static "js/geral.js" %}"></script>
+{% endblock theme-js %}
+
+{% block title %}
+— {{pagina}}
+{% endblock title %}

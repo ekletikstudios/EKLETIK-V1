@@ -1,0 +1,32 @@
+{% extends 'geral.html' %}
+{% load static from staticfiles %}
+
+
+{% block title %}
+— {{pagina}}
+{% endblock title %}
+
+
+{% block theme-css %}
+<link rel="stylesheet" href="{% static "css/geral.css" %}">
+{% endblock theme-css %}
+
+{% block theme-js %}
+	<script src="{% static "js/geral.js" %}"></script>
+{% endblock theme-js %}
+
+{% block body %}
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1 class="text-center">Brevemente, <kbd>Azinca</kbd>, escola de programação.</h1>
+    <br>
+    <br>
+    <br>
+    <br>
+{% endblock %}

@@ -1,0 +1,264 @@
+{% extends 'base_store.html' %}
+{% load static from staticfiles %}
+
+
+{% block theme-css %}
+<link rel="stylesheet" href="{% static "css/blog.css" %}">
+{% endblock theme-css %}
+{% block theme-js %}
+	<script src="{% static "js/blog.js" %}"></script>
+{% endblock theme-js %}
+
+
+{% block title %}
+— {{pagina}}
+{% endblock title %}
+
+{% block cart %}
+<div class="cart_sidebar cartSidebar">
+	<div class="cart_header"><span class="cart_amount">2</span><a href="#" class="sidebar_close_btn cartClose"></a></div>
+	<ul class="product_list cart_mod">
+		<li class="product_item cart_mod">
+			<div class="product_block cart_mod">
+				<div class="product_i_w cart_mod"><img alt="" src="{% static "loja/i/product_16.jpg" %}" class="product_i cart_mod"/></div>
+				<div class="product_info cart_mod"><a href="#" class="product_title cart_mod">Bright Wall Clock</a>
+						<span class="product_price cart_mod">$99</span>
+						<a href="#" class="product_remove cart_mod">Delete</a>
+				</div>
+			</div>
+		</li>
+		<li class="product_item cart_mod">
+			<div class="product_block cart_mod">
+				<div class="product_i_w cart_mod"><img alt="" src="{% static "loja/i/product_17.jpg" %}" class="product_i cart_mod"/></div>
+				<div class="product_info cart_mod"><a href="#" class="product_title cart_mod">Bright Wall Clock</a>
+						<span class="product_price cart_mod">$399</span>
+						<a href="#" class="product_remove cart_mod">Delete</a>
+				</div>
+			</div>
+		</li>
+	</ul>
+	<div class="cart_footer">
+		<div class="cart_total">
+			<dl>
+				<dt class="title">Total:</dt>
+				<dd class="def">$308</dd>
+			</dl>
+		</div><a href="#" class="cart_check_btn">Chekout</a>
+	</div>
+</div>
+{% endblock cart %}
+
+
+{%block body %}
+<div class="wrapper">
+	<div class="base">
+		<div class="home_slider_w parallaxWrap">
+			<div class="home_slider_in parallaxTarget">
+				<ul class="home_slider_list homeSlider">
+
+					<li class="home_slider_item">
+						<article class="product_block slider_mod">
+							<div class="product_info slider_mod">
+								<span class="product_title slider_mod">Fam Armchair</span>
+								<span class="product_price slider_mod">$399</span>
+								<a href="{% url 'producto' %}" class="product_buy slider_mod">Aquira Já</a>
+							</div>
+							<div class="product_i_w slider_mod">
+								<div class="product_i_w_in slider_mod chair_mod">
+									<img alt="" src="{% static "loja/i/product_1.png" %}" class="product_i slider_mod chair_mod">
+									<span class="product_i_label slider_mod v1_mod">Novo</span>
+								</div>
+							</div>
+						</article>
+					</li>
+
+					<li class="home_slider_item">
+						<article class="product_block slider_mod">
+							<div class="product_info slider_mod">
+								<span class="product_title slider_mod">Braun Watch SD12</span>
+								<span class="product_price slider_mod">$399</span>
+								<a href="" class="product_buy slider_mod">Aquira Já</a>
+							</div>
+							<div class="product_i_w slider_mod">
+								<div class="product_i_w_in slider_mod">
+									<img alt="" src="{% static "loja/i/product_2.png" %}" class="product_i slider_mod clock_mod">
+									<span class="product_i_label slider_mod v2_mod">Sale</span>
+								</div>
+							</div>
+						</article>
+					</li>
+
+					<li class="home_slider_item">
+						<article class="product_block slider_mod">
+							<div class="product_info slider_mod">
+								<span class="product_title slider_mod">Refocus Chair</span>
+								<span class="product_price slider_mod">$399</span>
+								<a href="" class="product_buy slider_mod">Aquira Já</a>
+							</div>
+							<div class="product_i_w slider_mod">
+								<div class="product_i_w_in slider_mod chair_mod">
+									<img alt="" src="{% static "loja/i/product_1.png" %}" class="product_i slider_mod chair_mod">
+									<span class="product_i_label slider_mod v1_mod">Nuevo</span>
+								</div>
+							</div>
+						</article>
+					</li>
+
+				</ul>
+			</div>
+		</div>
+
+
+		<div class="parallax_post_w parallaxPost">
+			<div class="home_categories_w">
+				<ul class="cat_list home_mod">
+					<li class="cat_item home_mod"><a href="" class="cat_link home_mod active_mod">Música</a></li>
+					<li class="cat_item home_mod"><a href="" class="cat_link home_mod">Poesia</a></li>
+					<li class="cat_item home_mod"><a href="" class="cat_link home_mod">Livros</a></li>
+					<li class="cat_item home_mod"><a href="" class="cat_link home_mod">Templates</a></li>
+					<li class="cat_item home_mod"><a href="" class="cat_link home_mod">Extras</a></li>
+				</ul>
+				<div class="home_categories_select">
+					<dl class="form_cell form_cell_v1_mod">
+						<dt class="form_c_hline form_v1_mod hline_hide_mod">
+							<label for="color_chose">Productos</label>
+						</dt>
+						<dd class="form_c_f_w form_v1_mod hline_hide_mod">
+							<select id="color_chose" data-placeholder="" class="f_c_field default_mod chosenTarget category_mod select_rediz_coosen">
+								<option value="Featured">Música</option>
+								<option value="Furniture">Poesia</option>
+								<option value="Decoration">Livros</option>
+								<option value="Lighting">Templates</option>
+								<option value="Electronics">Extras</option>
+							</select>
+						</dd>
+					</dl>
+				</div>
+			</div>
+
+
+
+
+			<ul class="grid_list v1_mod">
+				<li class="grid_item v1_mod">
+					<a href="" data-animation_name="fadeIn" class="product_block grid_mod animationTarget">
+						<div class="product_i_w grid_mod">
+							<img alt="" src="{% static "loja/i/product_3.png" %}" class="product_i grid_mod">
+						</div>
+						<div class="product_info grid_mod">
+							<span class="product_cat grid_mod">Música</span>
+							<span class="product_title grid_mod">Big Black Chair</span>
+							<span class="product_price grid_mod">$249</span>
+						</div>
+					</a>
+				</li>
+				<li class="grid_item v1_mod">
+					<a href="" data-animation_name="fadeIn" class="product_block grid_mod animationTarget">
+						<div class="product_i_w grid_mod">
+							<img alt="" src="{% static "loja/i/product_4.png" %}" class="product_i grid_mod">
+						</div>
+						<div class="product_info grid_mod">
+							<span class="product_cat grid_mod">Decoration</span>
+							<span class="product_title grid_mod">Bright Wall Clock</span>
+							<span class="product_price grid_mod">$29</span>
+						</div>
+					</a>
+				</li>
+
+											<li class="grid_item v1_mod">
+												<a href="" data-animation_name="fadeIn" class="action_block animationTarget">
+												<span class="action_label"></span>
+													<div class="product_title action_mod">
+														<span>Palavras</span>
+														<span>Transparentes</span>
+													</div>
+													<div class="product_price action_mod">
+														<span class="new">$9.99</span>
+													</div>
+												</a>
+											</li>
+
+
+											<li class="grid_item v1_mod">
+												<a href="" data-animation_name="fadeIn" class="sale_block animationTarget">
+													<div class="sale_sum">
+														<span class="num">100</span>
+														<span class="unit">%</span>
+													</div>
+													<span class="sale_title">Descontos</span>
+													<div class="sale_desc">Escolha o que quer e faça <strong>Download</strong>. É tudo seu.</div>
+												</a>
+											</li>
+
+
+
+				<li class="grid_item v1_mod">
+					<a href="" data-animation_name="fadeIn" class="product_block grid_mod animationTarget">
+						<div class="product_i_w grid_mod">
+							<img alt="" src="{% static "loja/i/product_5.png" %}" class="product_i grid_mod">
+						</div>
+						<div class="product_info grid_mod">
+							<span class="product_cat grid_mod">Decoration</span>
+							<span class="product_title grid_mod">Stewie Floor Lamp</span>
+							<span class="product_price grid_mod">$79</span>
+						</div>
+					</a>
+				</li>
+
+				<li class="grid_item v1_mod">
+					<a href="" data-animation_name="fadeIn" class="product_block grid_mod animationTarget">
+						<div class="product_i_w grid_mod">
+							<img alt="" src="{% static "loja/i/product_6.png" %}" class="product_i grid_mod">
+						</div>
+						<div class="product_info grid_mod">
+							<span class="product_cat grid_mod">Furniture</span>
+							<span class="product_title grid_mod">Classic Chair</span>
+							<span class="product_price grid_mod">$55</span>
+						</div>
+					</a>
+				</li>
+				<li class="grid_item v1_mod">
+					<a href="" data-animation_name="fadeIn" class="product_block grid_mod animationTarget">
+						<div class="product_i_w grid_mod">
+							<img alt="" src="{% static "loja/i/product_7.png" %}" class="product_i grid_mod">
+						</div>
+						<div class="product_info grid_mod">
+							<span class="product_cat grid_mod">Furniture</span>
+							<span class="product_title grid_mod">Sheep Bench Felt</span>
+							<span class="product_price grid_mod">$129</span>
+						</div>
+					</a>
+				</li>
+				<li class="grid_item v1_mod">
+					<a href="" data-animation_name="fadeIn" class="product_block grid_mod animationTarget">
+						<div class="product_i_w grid_mod">
+							<img alt="" src="{% static "loja/i/product_8.png" %}" class="product_i grid_mod">
+						</div>
+						<div class="product_info grid_mod">
+							<span class="product_cat grid_mod">Electronics</span>
+							<span class="product_title grid_mod">Vifa Loudspeaker</span>
+							<span class="product_price grid_mod">$59</span>
+						</div>
+					</a>
+					</li>
+
+
+				<li class="grid_item v1_mod">
+					<a href="" data-animation_name="fadeIn" class="product_block grid_mod animationTarget">
+						<div class="product_i_w grid_mod offset_mod">
+							<img alt="" src="{% static "loja/i/product_9.png" %}" class="product_i grid_mod">
+						</div>
+						<div class="product_info grid_mod">
+							<span class="product_cat grid_mod">Lighting</span>
+							<span class="product_title grid_mod">Muuto Lamp</span>
+							<span class="product_price grid_mod">$157</span>
+						</div>
+					</a>
+				</li>
+			</ul>
+
+		</div>
+	</div>
+
+</div>
+{%endblock body %}

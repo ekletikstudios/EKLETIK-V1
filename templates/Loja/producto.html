@@ -1,0 +1,215 @@
+{% extends 'base_loja.html' %}
+{% load static from staticfiles %}
+
+
+{% block theme-css %}
+<link rel="stylesheet" href="{% static "css/geral.css" %}">
+{% endblock theme-css %}
+{% block theme-js %}
+	<script src="{% static "js/geral.js" %}"></script>
+{% endblock theme-js %}
+
+
+
+
+{% block body %}
+
+<div id="ek-blog" class="ek-bg-section">
+  <div class="container">
+    <div class="row animate-box row-pb-md" data-animate-effect="fadeInUp">
+      <div class="col-md-8 col-md-offset-2 text-left ek-heading">
+
+          {% if tipo not in producto.fem %}
+            <span class="">Um {{ tipo }} de {{ autor }}</span>
+          {% else %}
+             <span class="">Uma {{ tipo }} de {{ autor }}</span>
+          {% endif %}
+
+            <h2 class="">{{ nome }}</h2>
+            <p class="">{{ descricao }}</p>
+            <hr>
+
+      </div>
+
+    </div>
+
+        {% if tipo == "Álbum" %}
+             <div class="row animate-box row-pb-md" id="Album">
+
+                <div class="col-md-4 col-md-offset-2">
+	            <img class="img-thumbnail" src="{{ capa }}" alt="Imagem de {{ nome }}">
+                    <p>{{ tipo }} {% if ficheiro %} | Download {{ tamanho | filesizeformat }} {% endif %}</p>
+                </div>
+
+                <div class="col-md-4">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Título</th>
+                            <th>Duração</th>
+
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr class="">
+                            <th scope="row">1</th>
+                            <td>A Voz</td>
+                            <td>03:54</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>O Último Inimigo</td>
+                            <td>03:54</td>
+                        </tr>
+                        <tr class="">
+                            <th scope="row">3</th>
+                            <td>Mica: O Bairro de Barro</td>
+                            <td>03:54</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Silêncio</td>
+                            <td>03:54</td>
+                        </tr>
+                        <tr class="">
+                            <th scope="row">5</th>
+                            <td>Poema #5</td>
+                            <td>03:54</td>
+                        </tr>
+                        <tr class="">
+                            <th scope="row">6</th>
+                            <td>Oceano Atípico</td>
+                            <td>03:54</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">7</th>
+                            <td>Peregrino</td>
+                            <td>03:54</td>
+                        </tr>
+                        <tr class="">
+                            <th scope="row">8</th>
+                                <td>Porto Seguro</td>
+                                <td>03:54</td>
+                        </tr>
+                        <tr class="">
+                            <th scope="row">9</th>
+                                <td>Porto Seguro</td>
+                                <td>03:54</td>
+                        </tr>
+                        <tr class="">
+                            <th scope="row">10</th>
+                                <td>Criança</td>
+                                <td>03:54</td>
+                        </tr>
+                        <tr class="">
+                            <th scope="row">11</th>
+                                <td>J'amas</td>
+                                <td>03:54</td>
+                        </tr>
+                        <tr class="">
+                            <th scope="row">12</th>
+                                <td>Canadá</td>
+                                <td>03:54</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+
+            </div>
+        {% endif %}
+
+        {% if tipo == "Livro" %}
+                <div class="row animate-box row-pb-md" id="Livro">
+
+                <div class="col-md-4 col-md-offset-2">
+	            <img class="img-responsive" src="{{ capa }}" alt="Imagem de {{ nome }}">
+                    <p>{{ tipo }} {% if ficheiro %} | Download {{ tamanho | filesizeformat }} {% endif %}</p>
+                </div>
+
+                <div class="col-md-4">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Pág.</th>
+                            <th>Capítulo</th>
+
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr class="">
+                            <th scope="row">1</th>
+                            <td>Beginnings</td>
+
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Heart-felt</td>
+
+                        </tr>
+                        <tr class="">
+                            <th scope="row">3</th>
+                            <td>Sunday</td>
+
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>A Matter of Faith</td>
+
+                        </tr>
+                        <tr class="">
+                            <th scope="row">5</th>
+                            <td>Luzeiros</td>
+
+                        </tr>
+                        <tr class="">
+                            <th scope="row">6</th>
+                            <td>Deep in the Sea</td>
+
+                        </tr>
+                        <tr>
+                            <th scope="row">7</th>
+                            <td>Nice to Meet You</td>
+
+                        </tr>
+                        <tr class="">
+                            <th scope="row">8</th>
+                                <td>A Time to Remember</td>
+
+                        </tr>
+
+                    </tbody>
+                </table>
+                </div>
+
+            </div>
+        {% endif %}
+
+  </div>
+
+    <div class="container">
+
+    </div>
+</div>
+
+
+{% endblock body %}
+<p>A Voz</p>
+<p>O Último Inimigo</tr>
+<p>Mica: O Bairro de Barro</tr>
+<p>Silêncio</tr>
+<p>Poema #5</tr>
+<p>Oceano Atípico</tr>
+<p>Peregrino</tr>
+<p>Porto Seguro</tr>
+<p>Criança</tr>
+<p>J'amas</tr>
+<p>Canadá</tr>
+
+
+Oficialmente intitulado "Bright Dreamscape", este álbum consiste em uma colecção de instrumentais produzidos por Leo Neto e amigos.
+Dedicado à família e aos amigos, "Palavras Transparentes" é um álbum gravado e produzido por mim com alguns dos meus poemas favoritos dos últimos cinco anos.
+O álbum conta com onze poemas escritos por mim, com os quais tento contar eventos significantes da minha infância até então,
+bem como desvendar segredos escondidos no âmago de um ser deveras amargo.

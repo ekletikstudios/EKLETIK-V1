@@ -1,0 +1,100 @@
+{% extends 'geral.html' %}
+{% load static from staticfiles %}
+
+
+{% block theme-css %}
+<link rel="stylesheet" href="{% static "css/geral.css" %}">
+{% endblock theme-css %}
+{% block theme-js %}
+	<script src="{% static "js/geral.js" %}"></script>
+{% endblock theme-js %}
+
+
+{% block blogue %}
+<div class="container">
+<div class="row row-pb-md">
+<div class="ek-heading" id="ek-blog">
+
+    <form method="POST" class="form-group">
+
+        {% csrf_token %}
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th><span>Título</span>{{ form.titulo }}</th>
+                </tr>
+
+                <tr>
+                    <th><span>Sumário</span>{{ form.sumario }}</th>
+                </tr>
+
+                <tr>
+                    <th><span>Data de publicação</span>{{ form.data }}</th>
+                </tr>
+
+                <tr>
+                    <th><span>Autor</span>{{ form.autor }}</th>
+                </tr>
+
+                <tr>
+                    <th>
+                        <span>
+                            Tóptic
+                        </span>
+                        {{ form.tema }}
+                    </th>
+                </tr>
+                <tr>
+                     <th>
+                         <span>
+                            Status
+                         </span>
+                         {{ form.status }}
+                     </th>
+                </tr>
+
+                <tr>
+                    <th>
+                        <span>
+                            Richmedia
+                        </span>
+                        {{ form.richmedia }}
+                    </th>
+                </tr>
+
+                <tr>
+                    <th>
+                        <span>
+                            Destaque
+                        </span>
+                        {{ form.destaque }}
+                    </th>
+                </tr>
+
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th>
+                        <span>Artigo</span>
+                        {{ form.artigo }}
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <button type="submit" class="save btn btn-default">Save</button>
+                    </th>
+                </tr>
+            </tbody>
+
+        </table>
+    </form>
+</div>
+</div>
+</div>
+{% endblock %}
+
+
+{% block call-to-action %}
+{% endblock %}

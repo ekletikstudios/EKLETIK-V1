@@ -1,0 +1,20 @@
+{% extends 'admin/base.html' %}
+{% load static from staticfiles %}
+{% block branding %}
+    <h1>Ekletik Studios, S.A.</h1>
+{% endblock branding%}
+
+{% block title %}
+    Ekletik Studios, S.A.
+{% endblock title %}
+
+
+{% block extrastyle %}
+{#    <link rel="stylesheet" href="{% static "css/bootstrap.css" %}">#}
+{% endblock extrastyle %}
+
+
+{% block extrahead-1 %}
+    <link rel="stylesheet" href="{% static "loja/css/style.css" %}">
+    <link rel="stylesheet" href="{% static "css/geral.css" %}">
+{% endblock extrahead-1 %}

@@ -1,0 +1,41 @@
+{% extends 'geral.html' %}
+{% load static from staticfiles %}
+{% block mainlink %}<div id="ek-logo"><a href="{% url 'home' %}">::<span>404</span> </a></div>{% endblock mainlink %}
+
+{% block title %}
+    - {{ pagina }}
+{% endblock title %}
+
+{% block theme-css %}
+<link rel="stylesheet" href="{% static "css/geral.css" %}">
+{% endblock theme-css %}
+{% block theme-js %}
+	<script src="{% static "js/geral.js" %}"></script>
+{% endblock theme-js %}
+
+{% block call-to-action %}
+{% endblock %}
+
+
+
+{%block header%}
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  <div class="container">
+    <div class="alert alert-dismissable" role="alert">
+      <h2><kbd>Erro: 404 </kbd></h2>
+        <p>A página ou recurso que solicitou em <kbd>{{ origem }}</kbd> não está disponível.<br></p><hr>
+      <p>Por favor, verifique o URL que utilizou para chegar até aqui. Se acredita estar aqui por engano, contacte o gestor do site.</p><hr>
+      <p>Pode ainda, se preferir, voltar à <a href="{% url 'home' %}"><kbd>página inicial</kbd></a>.</p><hr>
+        {% if erro %}
+        <span>{{ erro }}</span><hr>
+        {% endif %}
+    </div>
+
+  </div>
+
+{%endblock%}

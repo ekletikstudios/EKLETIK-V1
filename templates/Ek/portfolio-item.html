@@ -1,0 +1,57 @@
+{% extends 'base_loja.html' %}
+{% load static from staticfiles %}
+
+{% block theme-css %}
+<link rel="stylesheet" href="{% static "css/geral.css" %}">
+<link rel="stylesheet" href="{% static "css/portfolio-cores.css" %}">
+{% endblock theme-css %}
+{% block theme-js %}
+	<script src="{% static "js/geral.js" %}"></script>
+{% endblock theme-js %}
+
+
+
+
+
+
+
+{% block body %}
+
+<div id="ek-blog" class="ek-bg-section">
+  <div class="container">
+    <div class="row animate-box row-pb-md" data-animate-effect="fadeInUp">
+      <div class="col-md-8 col-md-offset-2 text-left ek-heading">
+
+          <span class="">{{ tipo }}</span>
+            <h2 class="">{{ nome }}</h2>
+            <p class="">{{ descricao | safe | linebreaks}}</p>
+            <span class="Paleta">Paleta</span>
+
+            {% for cor in paleta %}
+                {% if cor is not 0 %}
+                    <p class="{{ nome }}" style="background-color:{{ cor }}; border: solid; border-color: #000">{{ cor }}</p>
+                {% endif %}
+            {% endfor %}
+            <span>Cliente: <kbd>{{ cliente }}</kbd></span>
+            <hr>
+      </div>
+    </div>
+
+             <div class="row animate-box row-pb-md" id="Album">
+
+                <div class="col-md-8 col-md-offset-2">
+	            <img class="img-thumbnail" src="{{ capa }}" alt="Imagem de {{ nome }}">
+                    <p></p>
+                </div>
+
+            </div>
+
+
+  </div>
+
+    <div class="container">
+
+    </div>
+</div>
+
+{% endblock body %}

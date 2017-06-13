@@ -1,0 +1,213 @@
+{% load static from staticfiles %}
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Ekletik Studios - </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Criamos arte para a internet." />
+	<meta name="keywords" content="Angola, Luanda, startups, sonzito, luzeiros" />
+	<meta name="author" content="Leo Neto @ EK Studios" />
+
+
+
+    <!-- //////////////////////////////////////////////////////
+
+	Desenvolvido por Leo Neto
+    Template: freehtml5.co
+
+	Website: 		https://ekletik.com/
+	Twitter: 		https://twitter.com/ekletikstudios
+	Facebook: 	    https://www.facebook.com/ekletikstudios
+
+	/////////////////////////////////////////////////////// -->
+
+
+  	<!-- Facebook and Twitter integration -->
+  	<meta property="og:title" content=""/>
+  	<meta property="og:image" content=""/>
+  	<meta property="og:url" content=""/>
+  	<meta property="og:site_name" content=""/>
+  	<meta property="og:description" content=""/>
+  	<meta name="twitter:title" content="" />
+  	<meta name="twitter:image" content="" />
+  	<meta name="twitter:url" content="" />
+  	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<!-- <link rel="shortcut icon" href="favicon.ico"> -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic,700italic|Merriweather:300,400italic,300italic,400,700italic' rel='stylesheet' type='text/css'>
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="{% static "css/animate.css" %}">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="{% static "css/icomoon.css" %}">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="{% static "css/bootstrap.css" %}">
+	<!-- Simple Line Icons -->
+	<link rel="stylesheet" href="{% static "css/simple-line-icons.css" %}">
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="{% static "css/magnific-popup.css" %}">
+	<!-- Theme style -->
+	<link rel="stylesheet" href="{% static "css/main.css" %}">
+	<!-- Modernizr JS -->
+	<script src="{% static "js/modernizr-2.6.2.min.js" %}"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="{% static "js/respond.min.js" %}"></script>
+	<![endif]-->
+	</head>
+
+
+
+  <body>
+
+    <div class="ek-loader"></div>
+    <!--  Start Page -->
+    <div id="page">
+
+    <nav class="ek-nav" role="navigation">
+        <div class="container">
+				<div class="row">
+					<div class="col-xs-2 text-left">
+						<div id="ek-logo"><a href="{% url 'home' %}">Ekletik<span>{{ pagina }}</span></a></div>
+					</div>
+					<div class="col-xs-10 text-right menu-1">
+						<ul>
+
+                            <li><a href="{% url 'empresa' %}">Empresa</a></li>
+							<li class="has-dropdown">
+								<a href="{% url 'empresa' %}">Serviços</a>
+							</li>
+
+							<li><a href="{% url 'portfolio' %}">Portfolio</a></li>
+							<li><a href="{% url 'blog' %}">Blog</a></li>
+							<li><a href="{% url 'loja' %}">Loja</a></li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+    </nav>
+
+
+    {% block header %}
+	{% endblock header %}
+
+	{% block projectos %}
+	{% endblock projectos %}
+
+	{% block servicos %}
+	{% endblock servicos %}
+
+	{% block parceiros %}
+	{% endblock parceiros %}
+
+	{% block counter %}
+	{% endblock counter %}
+
+	{% block blogue %}
+	{% endblock blogue %}
+
+	{% block call-to-action %}
+        <div id="ek-started">
+          <div class="container">
+            <div class="row animate-box">
+              <div class="col-md-8 col-md-offset-2 text-center ek-heading">
+                <span>Não Fique Só a Olhar</span>
+                <h2>'Bora Trabalhar</h2>
+                <p>Somos uma empresa no ramo das tecnologias de informação e comunicação e especialistas na gestão, promoção, e ensino das mesmas.</p>
+                <p><button type="submit" class="btn btn-primary">Solicitação</button></p>
+              </div>
+            </div>
+          </div>
+        </div>
+    {% endblock call-to-action %}
+
+	<!--  Site Footer -->
+	<footer id="ek-footer" role="contentinfo">
+		<div class="container">
+			<div class="row row-pb-md">
+				<div class="col-md-4 ek-widget ">
+					<h3>Ekletik Studios</h3>
+					<p>Faz da internet a sua segunda casa. Utilize os nossos serviços para alavancar os seus negócios.</p>
+				</div>
+				<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1 ">
+					<ul class="ek-footer-links">
+						<li><a href="{% url 'empresa' %}">Empresa</a></li>
+						<li><a href="{% url 'portfolio' %}">Projectos</a></li>
+						<li><a href="#">Fórum</a></li>
+
+					</ul>
+				</div>
+
+				<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1 ">
+					<ul class="ek-footer-links">
+						<li><a href="">Azinca</a></li>
+						<li><a href="#">Sonzito</a></li>
+						<li><a href="#">Receita<span>ME</span></a></li>
+					</ul>
+				</div>
+
+				<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1 ">
+					<ul class="ek-footer-links">
+						<li><a href="#">APIs</a></li>
+						<li><a href="{% url 'empresa' %}">Empresa</a></li>
+						<li><a href="{% url 'contacto' %}">Contacto</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="row copyright">
+				<div class="col-md-12 text-center">
+					<p>
+						<small class="block">&copy; {% now 'u' %} Ekletik Studios e Parceiros.</small>
+						<small class="block">Algoritmos, metáforas e sistemas.</small>
+					</p>
+					<p>
+						<ul class="ek-social-icons">
+							<li><a href="https://twitter.com/ekletikstudios/"><i class="icon-twitter"></i></a></li>
+							<li><a href="https://github.com/ekletikstudios/"><i class="icon-github"></i></a></li>
+							<li><a href="https://dribbble.com/ekletikstudios/"><i class="icon-dribbble"></i></a></li>
+							<li><a href="https://youtube.com/user/azinca/"><i class="icon-youtube"></i></a></li>
+						</ul>
+					</p>
+				</div>
+			</div>
+
+		</div>
+	</footer>
+
+	<!--  End Page -->
+	</div>
+
+
+	<!-- jQuery -->
+	<script src="{% static "js/jquery.min.js" %}"></script>
+	<!-- jQuery Easing -->
+	<script src="{% static "js/jquery.easing.1.3.js" %}"></script>
+	<!-- Bootstrap -->
+	<script src="{% static "js/bootstrap.min.js" %}"></script>
+	<!-- Waypoints -->
+	<script src="{% static "js/jquery.waypoints.min.js" %}"></script>
+	<!-- Stellar Parallax -->
+	<script src="{% static "js/jquery.stellar.min.js" %}"></script>
+	<!-- countTo -->
+	<!-- <script src="{% static "js/jquery.countTo.js" %}"></script> -->
+	<!-- Magnific Popup -->
+	<script src="{% static "js/jquery.magnific-popup.min.js" %}"></script>
+	<script src="{% static "js/magnific-popup-options.js" %}"></script>
+	<!-- Main JS -->
+	<script src="{% static "js/main.js" %}"></script>
+
+
+
+	</body>
+</html>

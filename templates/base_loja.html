@@ -1,0 +1,34 @@
+{% extends 'geral.html' %}
+{% load static from staticfiles %}
+
+{% block title %}
+- {{pagina}}
+{% endblock title %}
+
+
+{%block theme-css%}
+    <!-- STORE ONLY -->
+    <!-- Flexslider  -->
+	<link rel="stylesheet" href="{% static "loja/css/flexslider.css" %}">
+	<!-- Owl Carousel  -->
+	<link rel="stylesheet" href="{% static "loja/css/owl.carousel.min.css" %}">
+	<link rel="stylesheet" href="{% static "loja/css/owl.theme.default.min.css" %}">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="{% static "loja/css/style.css" %}">
+    <link rel="stylesheet" href="{% static "css/geral.css" %}">
+{%endblock theme-css%}
+
+
+
+
+
+{% block theme-js %}
+  <!--  STORE ONLY -->
+  <!-- Carousel -->
+	<script src="{% static "loja/js/owl.carousel.min.js" %}"></script>
+  <!-- Flexslider -->
+	<script src="{% static "loja/js/jquery.flexslider-min.js" %}"></script>
+	<!-- Main -->
+	<script src="{% static "js/geral.js" %}"></script>
+    <script src="{% static "loja/js/main.js" %}"></script>
+{% endblock theme-js %}

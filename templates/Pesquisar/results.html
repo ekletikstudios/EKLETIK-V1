@@ -1,0 +1,115 @@
+{% extends 'geral.html' %}
+{% load static from staticfiles %}
+
+{% block theme-css %}
+    <link rel="stylesheet" href="{% static "css/geral.css" %}">
+{% endblock %}
+
+{% block theme-js %}
+    <script type="text/javascript" src="{% static "js/geral.js" %}"></script>
+{% endblock %}
+
+
+
+{%block header%}
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+  <div class="container">
+    <div class="alert alert-dismissable" role="alert">
+
+        {% if erro %}
+            <h2><kbd>Erro: 404</kbd> algo não está correto.</h2>
+            <span>{{ erro }}</span>
+
+        {% else %}
+
+
+
+
+        <br id="">
+            <h2>Pesquisa: <code>{{ pesquisa }}</code></h2>
+            <br>
+
+
+            <div class="row">
+
+            {% if pessoas %}
+                <div class="col-md-3">
+
+                <h3>Autores</h3>
+                    {% for i in pessoas %}
+                        <a href="{% url 'doautor' i%}">{{ i }}</a><br>
+                    {% endfor %}
+                </div>
+            {% endif %}
+
+
+
+            {% if artigos or titulos %}
+                <div class="col-md-3">
+                <h2>Artigos</h2>
+
+                    {% if artigos %}
+
+                        {% for artigo in artigos %}
+                            <a href="{% url 'artigo' artigo.titulo %}">{{ artigo }}</a><br>
+                        {% endfor %}
+                        <br>
+                    {% endif %}
+
+
+                    {% if titulos %}
+                        <hr>
+                        {% for i in titulos %}
+                            <a href="{% url 'artigo' i.titulo %}">{{ i }}</a> <br>
+                        {% endfor %}
+                    {% endif %}
+                </div>
+            {% endif %}
+
+
+
+            {% if albums %}
+                <div class="col-md-3">
+
+                <h3>Albums</h3>
+                {% for i in albums %}
+                    <a href="{% url 'album' i.titulo %}">{{ i.titulo }}</a><br>
+                {% endfor %}
+                </div>
+            {% endif %}
+
+
+
+
+
+
+            {% if livros %}
+                <div class="col-md-3">
+
+                <h3>Livros</h3>
+                    {% for i in livros %}
+                        <a href="{% url 'livro' i.titulo %}">{{ i.titulo }}</a><br>
+                    {% endfor %}
+                </div>
+            {% endif %}
+
+
+
+
+
+        </div>
+        {% endif %}
+        </div>
+
+        <hr>
+        <p class="text-center">Obrigado por utilizar este serviço. Clique para voltar à <a href="{% url 'home' %}"><code>página inicial</code></a>.</p>
+        <hr>
+    </div>
+
+{%endblock%}

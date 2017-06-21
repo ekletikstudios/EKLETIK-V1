@@ -44,9 +44,9 @@ def SearchAlbums(titulo):
 ################# Search Views....
 
 def SpotifySearch(request):
-    return render(request, 'Spotify/search.html',{
+    return render(request, 'Pesquisar/search.html', {
         'main': 'Pesquisar',
-        'pagina': 'Spotify',
+        'pagina': 'Pesquisar',
     })
 
 
@@ -68,9 +68,9 @@ def SpotifyResults(request):
         se = 0
         user = 'None'
 
-    return render(request, 'Spotify/results.html',{
+    return render(request, 'Pesquisar/results.html', {
         'main': 'Pesquisar',
-        'pagina': 'Spotify',
+        'pagina': 'Pesquisar',
         'r': r,
         'erro': erro,
         'pesquisa': request.POST['pesquisa'],

@@ -12,7 +12,7 @@
     {% if pagina == 'Ekletik' %}
     <title>Ekletik Studios</title>
     {% else %}
-	<title>Ekletik Studios {% block title %}{% endblock title %}</title>
+	<title>{% if pagina %}{{ pagina }}{% endif %} :: Ekletik Studios</title>
     {% endif %}
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Criamos arte para a internet." />
@@ -117,6 +117,7 @@
                             {% else %}
                                 <li><a href="{% url 'contacto' %}">Contacto</a></li>
                             {% endif %}
+                            <li><a href="{% url 'Pesquisar' %}" class="icon-search"></a></li>
 						</ul>
 					</div>
 				</div>

@@ -10,51 +10,80 @@ from Portfolio.models import *
 def SearchUsers(nome):
     return "User...."
 
-def SearchArtigos(titulo):
+def SearchArtigos(keyword):
     try:
-        titulos = Artigo.objects.filter(titulo__icontains=titulo)
-        artigos = Artigo.objects.filter(artigo__icontains=titulo)
+        titulos = Artigo.objects.filter(status='p').filter(titulo__icontains=keyword)
+        artigos = Artigo.objects.filter(status='p').filter(artigo__icontains=keyword)
+        if not artigos:
+            artigos = Artigo.objects.filter(status='p').filter(autor__nome__contains=keyword)
     except Artigo.DoesNotExist:
         raise Http404('Nada a mostrar')
     return [artigos, titulos]
 
-def SearchPessoas(nome):
+def SearchPessoas(keyword):
     try:
-        pessoas = Pessoa.objects.filter(nome__icontains=nome)
+        pessoas = Pessoa.objects.filter(nome__icontains=keyword)
     except Pessoa.DoesNotExist:
         raise Http404('Nada a mostrar')
     return pessoas
 
-def SearchLivros(titulo):
+def SearchLivros(keyword):
     try:
-        livros = Livro.objects.filter(titulo__contains=titulo)
+        livros = Livro.objects.filter(status='p').filter(titulo__contains=keyword)
+        if not livros:
+            livros = Livro.objects.filter(status='p').filter(autor__contains=keyword)
     except Livro.DoesNotExist:
         raise Http404('Nada a mostrar')
     return livros
 
-def SearchAlbums(titulo):
+def SearchAlbums(keyword):
     try:
-        albums = Album.objects.filter(titulo__contains=titulo)
+        albums = Album.objects.filter(status='p').filter(titulo__contains=keyword)
+        if not albums:
+            albums = Album.objects.filter(status='p').filter(faixa__titulo__contains=keyword)
+            if not albums:
+                albums = Album.objects.filter(status='p').filter(artista__contains=keyword)
+                if not albums:
+                    albums = Album.objects.filter(status='p').filter(gravadora__contains=keyword)
+                    if not albums:
+                        albums = Album.objects.filter(status='p').filter(editorial__contains=keyword)
     except Album.DoesNotExist:
         raise Http404('Nada a mostrar')
     return albums
 
 
+def SearchPortfolio(keyword):
+    try:
+        projectos = Projecto.objects.filter(status='p').filter(nome__contains=keyword)
+        if not projectos:
+            projectos = Projecto.objects.filter(status='p').filter(cliente__contains=keyword)
+            if not projectos:
+                projectos = Projecto.objects.filter(status='p').filter(informacao__contains=keyword)
+                if not projectos:
+                    projectos = Projecto.objects.filter(status='p').filter(autor__contains=keyword)
+    except Projecto.DoesNotExist:
+        raise Http404("Sem Projectos")
+    return projectos
+
+
+
+# def SearchContentTypes(pesquisa):
+#     try:
+#     except:
+#     return types
 
 
 
 ################# Search Views....
 
 def Pesquisar(request):
-    return render(request, 'Spotify/search.html',{
+    return render(request, 'Pesquisar/search.html', {
         'main': 'Pesquisar',
         'pagina': 'Pesquisar',
     })
 
 
 def Results(request):
-    #artigos = Artigo.objects.all()
-    #projectos = Projecto.objects.all()
 
     if request.POST:
         r = request.POST['pesquisa']
@@ -71,7 +100,7 @@ def Results(request):
         se = 0
         user = 'None'
 
-    return render(request, 'Spotify/results.html',{
+    return render(request, 'Pesquisar/results.html', {
         'main': 'Pesquisar',
         'pagina': 'Resultados',
         'r': r,

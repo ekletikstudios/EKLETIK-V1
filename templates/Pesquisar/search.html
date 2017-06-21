@@ -1,0 +1,40 @@
+{% extends 'geral.html' %}
+{% load static from staticfiles %}
+
+
+{% block theme-css %}
+    <link rel="stylesheet" href="{% static "css/geral.css" %}">
+{% endblock %}
+
+{% block theme-js %}
+    <script type="text/javascript" src="{% static "js/geral.js" %}"></script>
+{% endblock %}
+
+
+
+{% block call-to-action %}
+{% endblock %}
+
+{%block header%}
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  <div class="container">
+    <div class="alert alert-dismissable" role="alert">
+      <h2><code>Pesquisar pelo site</code></h2>
+        <div class="">
+            <form class="form" method="POST" action="{% url 'Results' %}">
+                {% csrf_token %}
+                <input name="pesquisa" type="text" placeholder="O que procura?">
+                <button type="submit" class="btn btn-default">Pesquisar</button>
+            </form>
+
+        </div>
+    </div>
+
+  </div>
+
+{%endblock%}

@@ -1,0 +1,94 @@
+{% extends 'base_loja.html' %}
+{% load static from staticfiles %}
+
+
+{% block theme-css %}
+<link rel="stylesheet" href="{% static "css/geral.css" %}">
+{% endblock theme-css %}
+{% block theme-js %}
+	<script src="{% static "js/geral.js" %}"></script>
+    <script src="{% static "loja/js/player.js" %}"></script>
+{% endblock theme-js %}
+
+
+
+
+{% block body %}
+
+<div id="ek-blog" class="ek-bg-section">
+  <div class="container">
+    <div class="row animate-box row-pb-md" data-animate-effect="fadeInUp">
+      <div class="col-md-8 col-md-offset-2 text-left ek-heading">
+
+            <span class="">Um {{ item.tipo }} de {{ autor }}</span>
+            <h2 class="">{{ item.titulo }}</h2>
+            <p class="">{{ item.editorial }}</p>
+            <hr>
+
+      </div>
+    </div>
+
+
+             <div class="row animate-box row-pb-md" id="Album">
+
+                <div class="col-md-4 col-md-offset-2">
+	            <img class="img-thumbnail" src="{{ capa }}" alt="Imagem de {{ titulo }}">
+                    <!-- <p><span></span> <kbd>Download {{ tamanho | filesizeformat }}</kbd></p> -->
+                </div>
+
+                <div class="col-md-4">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+
+                            <th>#</th>
+                            <th>Título</th>
+                            <th>Ouvir</th>
+
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+
+                        {% for faixa in faixas %}
+
+
+                        <tr class="">
+                            <th scope="row">{{ forloop.counter }}</th>
+                            <th>{{faixa}}</th>
+                            <th class="text-center">
+
+                                {% if faixa.ficheiro %}
+                                <button id="{{ faixa.numero }}" class="icon-play btn-primary" type="button" onclick="togglePlay(this.id)">
+                                    <audio id="faixa-{{ faixa.numero }}" class="audio" src="{{ faixa.ficheiro.url }}" onended="StopAudio(this.parentElement.id)"></audio>
+                                </button>
+                                {% else %}
+                                <button id="NoSong" class="btn-primary">
+                                </button>
+                                {% endif %}
+
+
+                            </th>
+                        </tr>
+
+
+                        {% endfor %}
+
+                    </tbody>
+                </table>
+                <p class="ek-heading">
+                <span>&copy; &copysr; {{ autor }}. Produção: {{ empresa }}</span>
+                </p>
+                </div>
+
+            </div>
+
+  </div>
+
+    <div class="container">
+
+    </div>
+</div>
+
+{% endblock body %}

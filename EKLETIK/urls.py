@@ -65,6 +65,7 @@ urlpatterns = [
     # Loja
     url(r'^loja/producto/albums/(?P<album>\D+)', L.LojaAlbum, name='album'),
     url(r'^loja/producto/livros/(?P<livro>\D+)', L.LojaLivro, name='livro'),
+    url(r'^loja/compra/(?P<keyword>\D+)/', L.Compra, name='Compra'),
     url(r'^loja/', L.Loja, name='loja'),
 
 
@@ -88,7 +89,7 @@ urlpatterns = [
 
 
 
-    # Spotify
+    # Pesquisar
     url(r'procurar/resultados/', Pesquisar.Results, name='Results'),
     url(r'procurar/', Pesquisar.Pesquisar, name='Pesquisar'),
     url(r'pesquisar/resultados/', Pesquisar.Results, name='Results'),

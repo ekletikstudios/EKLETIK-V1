@@ -82,7 +82,7 @@
 {#                            {% endif %}#}
 							<div class="inner">
 								<p>
-                                    <a href="" class="icon"><i class="icon-shopping-cart"></i></a>
+                                    <a href="{% url 'Compra' item.titulo %}" class="icon"><i class="icon-shopping-cart"></i></a>
 									<a href="{% url item.safeTipo item.titulo %}" class="icon"><i class="icon-eye2"></i></a>
 								</p>
 							</div>
@@ -113,7 +113,7 @@
 {#                            {% endif %}#}
 							<div class="inner">
 								<p>
-                                    <a href="" class="icon"><i class="icon-shopping-cart"></i></a>
+                                    <a href="{% url 'Compra' item.titulo %}" class="icon"><i class="icon-shopping-cart"></i></a>
 									<a href="{% url item.safeTipo item.titulo %}" class="icon"><i class="icon-eye2"></i></a>
 								</p>
 							</div>

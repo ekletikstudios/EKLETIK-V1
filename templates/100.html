@@ -1,0 +1,38 @@
+{% extends 'geral.html' %}
+{% load static from staticfiles %}
+{% block mainlink %}<div id="ek-logo"><a href="{% url 'home' %}">::<span>{{ pagina }}</span> </a></div>{% endblock mainlink %}
+
+
+{% block title %}
+    - {{ pagina }}
+{% endblock title %}
+
+{% block theme-css %}
+<link rel="stylesheet" href="{% static "css/geral.css" %}">
+{% endblock theme-css %}
+{% block theme-js %}
+	<script src="{% static "js/geral.js" %}"></script>
+{% endblock theme-js %}
+
+{% block call-to-action %}
+{% endblock %}
+
+
+
+{%block header%}
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  <div class="container">
+    <div class="alert alert-dismissable" role="alert">
+      <h2>Brevemente: <kbd>{{ pagina }}</kbd></h2>
+      <p>Estamos a trabalhar num novo projecto pra essa página.<br></p><hr>
+      <p>Por agora, é tudo que podemos dizer para não estragar a surpresa :)</p><hr>
+      <p>Ah, caso queira, poderá voltar à <a href="{% url 'home' %}"><kbd>página inicial</kbd></a>, ou poderá continuar pelo resto do site.</p><hr>
+    </div>
+  </div>
+
+{%endblock%}

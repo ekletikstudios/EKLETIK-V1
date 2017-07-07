@@ -25,6 +25,11 @@ def Erro(request):
         'pagina': '404',
     })
 
+def Brevemente(request):
+    return render(request, '100.html',{
+        'pagina': request.path.strip('/'),
+    })
+
 def home(request):
     Projectos = Projecto.objects.filter(destaque=True).order_by('-data')
     artigos = Artigo.objects.filter(status='p').order_by('-data')
@@ -33,7 +38,7 @@ def home(request):
     return render(request, 'Ek/ek.html', {
         'main': 'home',
         'pagina': 'Ekletik',
-        'port': Projectos,
+        'projectos': Projectos,
         'artigos': Artigos,
         'pessoas': Pessoas,
     })

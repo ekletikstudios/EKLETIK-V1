@@ -10,7 +10,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     {% if pagina == 'Ekletik' %}
-    <title>Ekletik Studios</title>
+    <title>Ekletik Studios :: Página Inicial</title>
     {% else %}
 	<title>{% if pagina %}{{ pagina }}{% endif %} :: Ekletik Studios</title>
     {% endif %}
@@ -63,6 +63,8 @@
 	<link rel="stylesheet" href="{% static "css/magnific-popup.css" %}">
 	<!-- Theme style -->
     {% block theme-css %}{% endblock theme-css %}
+    <link rel="stylesheet" href="{% static 'css/geral.css' %}">
+
 	<!-- Modernizr JS -->
 	<script src="{% static "js/modernizr-2.6.2.min.js" %}"></script>
 	<!-- FOR IE9 below -->
@@ -91,13 +93,13 @@
 				<div class="row">
 					<div class="col-xs-2 text-left">
 						{% if pagina == 'Ekletik' %}
-                        <div id="ek-logo"><a href="{% url 'home' %}">{{pagina}}<span>.</span></a></div>
+                        <div id="ek-logo"><a href="{% url 'home' %}">{{pagina}}<code>beta</code></a></div>
                         {% else %}
                         {% block mainlink %}
                             {% if main %}
-                            <div id="ek-logo"><a href="{% url main %}">::<span>{{pagina}}</span> </a></div>
+                            <div id="ek-logo"><a href="{% url main %}">::<kbd>{{pagina}}</kbd> </a></div>
                             {% else %}
-                                <div id="ek-logo"><a href="{% url 'home' %}">::<span>{{ pagina }}</span></a></div>
+                                <div id="ek-logo"><a href="{% url 'home' %}">::<kbd>{{ pagina }}</kbd></a></div>
                             {% endif %}
                         {% endblock mainlink %}
                         {% endif %}
@@ -113,7 +115,7 @@
 							<li><a href="{% url 'blog' %}">Blog</a></li>
 							<li><a href="{% url 'loja' %}">Loja</a></li>
                             {% if user.is_authenticated %}
-                                <li><a href="{% url 'logout' %}"><kbd>Logout</kbd></a></li>
+                                <li><a href="{% url 'logout' %}"><code>Logout</code></a></li>
                             {% else %}
                                 <li><a href="{% url 'contacto' %}">Contacto</a></li>
                             {% endif %}
@@ -154,7 +156,7 @@
               <div class="col-md-8 col-md-offset-2 text-center ek-heading">
                 <span>Não Fique Só a Olhar</span>
                 <h2>'Bora Trabalhar</h2>
-                <p>Somos uma empresa no ramo das tecnologias de informação e comunicação e especialistas na gestão, promoção, e ensino das mesmas.</p>
+                <p>Entre em contacto connosco e teremos muito gosto em <br> fazer coisas inéditas consigo e para si.</p>
                 <a href="{% url 'pedido' %}">
                   <p><button type="submit" class="btn btn-primary">Solicitação</button></p>
                 </a>
@@ -190,9 +192,9 @@
 
 				<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1 ">
 					<ul class="ek-footer-links">
-						<li><a href="#">Designers</a></li>
-						<li><a href="#">Developers</a></li>
-						<li><a href="#">APIs</a></li>
+						<li><a href="{% url 'designers' %}">Designers</a></li>
+						<li><a href="{% url 'developers' %}">Developers</a></li>
+						<li><a href="{% url 'apis' %}">APIs</a></li>
 					</ul>
 				</div>
 			</div>
@@ -213,7 +215,7 @@
 					</p>
                     {% if user.is_authenticated %}
                     <p class="ek-heading">
-                        <span>Conectado como </span> <kbd>{{ user.first_name }}</kbd>
+                        <span>Conectado como </span> <code>{{ user.first_name }}</code>
                     </p>
                     {% endif %}
 				</div>
@@ -238,7 +240,22 @@
 	<!-- Magnific Popup -->
 	<script src="{% static "js/jquery.magnific-popup.min.js" %}"></script>
 	<script src="{% static "js/magnific-popup-options.js" %}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.6/marked.min.js"></script>
+
     <!-- Main JS -->
     {% block theme-js %}{% endblock theme-js %}
+
+
+    <!-- Custom Markdown Generator -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".markdown").each(function () {
+                var raw_content = $(this).text()
+                var marked_content = marked(raw_content)
+                $(this).html(marked_content)
+            })
+        })
+    </script>
+
 	</body>
 </html>

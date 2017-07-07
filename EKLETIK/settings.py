@@ -43,7 +43,6 @@ INSTALLED_APPS = [
     'Azinca',
     'Loja',
     'Portfolio',
-
 ]
 
 MIDDLEWARE = [

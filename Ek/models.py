@@ -1,23 +1,8 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
-from django.db import models
-from datetime import date
+from ModelsLibraries import *
 from Choices import *
 
-
-# from Ek._Models import Album
-# from Ek._Models import Artigo
-# from Ek._Models import Livro
-# from Ek._Models import Pessoa
-# from Ek._Models import Projecto
-# from Ek._Models import Solicitacao
-
-# from ._Models.Album import Album
-# from ._Models.Artigo import Artigo
-# from ._Models.Livro import Livro
-# from ._Models.Pessoa import Pessoa
-# from ._Models.Projecto import Projecto
-# from ._Models.Solicitacao import Solicitacao
 
 
 class Pessoa(models.Model):
@@ -26,8 +11,8 @@ class Pessoa(models.Model):
     tutor = models.BooleanField(default=False)
     autor = models.BooleanField(default=False)
     editorial = models.CharField(blank=True, max_length=140)
-    Bio  = models.TextField(blank=True)
-    perfil = models.ImageField(upload_to='perfis',blank=True, max_length=100)
+    bio  = models.TextField(blank=True)
+    imagem = models.ImageField(upload_to='perfis',blank=True, max_length=100)
     status = models.CharField(max_length=1, choices=STATUS_CHOICES, default='r')
 
     class Meta:

@@ -67,10 +67,9 @@ def SearchPortfolio(keyword):
 
 
 
-# def SearchContentTypes(pesquisa):
-#     try:
-#     except:
-#     return types
+def SearchContentTypes(pesquisa):
+    types = Artigo.objects.all()
+    return types
 
 
 
@@ -93,6 +92,7 @@ def Results(request):
         livros = SearchLivros(r)
         albums = SearchAlbums(r)
         users = SearchUsers(r)
+        # tipos = SearchContentTypes(r)
     else:
         r = 'POST não recebido'
         erro = True

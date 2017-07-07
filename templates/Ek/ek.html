@@ -39,17 +39,17 @@
     </div>
 
     <div class="row">
-        {% for projecto in port %}
-            {% if forloop.counter <= 3 %}
-      <div class="col-md-4 col-sm-6 ek-project animate-box" data-animate-effect="fadeIn">
-        <a href="#"><img src="{{projecto.capa.url}}" alt="Imagem de capa de {{projecto.titulo}}" class="img-responsive">
-          <div class="ek-copy">
-            <h3>{{ projecto.titulo }}</h3>
-            <p>{{ projecto.tipo }} | {{ projecto.cliente }}</p>
+        {% for projecto in projectos %}
+        {% if forloop.counter <= 3 %}
+          <div class="col-md-4 col-sm-6 ek-project animate-box" data-animate-effect="fadeIn">
+            <a href="{% url 'portfolioItem' projecto.nome %}"><img src="{{projecto.capa.url}}" alt="Imagem de capa de {{projecto.nome}}" class="img-responsive">
+              <div class="ek-copy">
+                <h3>{{ projecto.nome }}</h3>
+                <p>{{ projecto.tipo }} | {{ projecto.cliente }}</p>
+              </div>
+            </a>
           </div>
-        </a>
-      </div>
-            {% endif %}
+        {% endif %}
         {% endfor %}
 
     </div>
@@ -67,7 +67,7 @@
           <span class="text-center">Experiência à grosso</span>
           <h2 class="text-center">Engenharias</h2>
 
-          <p class="text-center">Fazemos da internet a sua segunda casa. Uma alavanca para os seus negócios.</p>
+          <p class="text-center">Rabiscar, desenvolver e levar à net. Simples como 3, 2, 1...</p>
         </div>
       </div>
     </div>
@@ -79,7 +79,7 @@
           </span>
           <h3>Design</h3>
           <p>Desde os rabiscos em papel aos protótipos digitais, ajudámo-lo a dar forma às suas ideias e a materializar a sua visão.</p>
-          <p><a href="#">Saiba mais</a></p>
+          <p><a href="{% url 'empresa' %}">Saiba mais</a></p>
         </div>
       </div>
       <div class="col-md-4 col-sm-6 ">
@@ -89,7 +89,7 @@
           </span>
           <h3>Desenvolvimento</h3>
           <p>Sejam projectos em idiomas humanos ou em linguagens de programação, iremos guiá-lo seguramente à consolidação do seu projecto.</p>
-          <p><a href="#">Saiba mais</a></p>
+          <p><a href="{% url 'empresa' %}">Saiba mais</a></p>
         </div>
       </div>
       <div class="clearfix visible-sm-block"></div>
@@ -100,7 +100,7 @@
           </span>
           <h3>Alojamento</h3>
           <p>Tiramos a massada à gestão do seu negócio online. Mantenha o foco no que sabe fazer melhor e nós o ajudamos com o resto.</p>
-          <p><a href="#">Saiba mais</a></p>
+          <p><a href="{% url 'empresa' %}">Saiba mais</a></p>
         </div>
       </div>
 
@@ -187,12 +187,16 @@
     {% for artigo in artigos %}
     {% if forloop.counter <= 3 %}
       <div class="col-md-4 col-sm-4 animate-box" data-animate-effect="fadeInUp">
-        <a href="{% url 'artigo' artigo.titulo %}">
-        <div class="ek-post">
+        <a href="{% url 'artigo' artigo.titulo|addslashes %}">
+        <div class="ek">
           <span class="ek-date">{{ artigo.data }}</span>
           <h3>{{ artigo.titulo }}</h3>
-          <p>{{ artigo.artigo | slice:"80" }} [...]</p>
-          <p class="author"><img src="{{ artigo.autor.perfil.url }}" alt="Imagem de {{autor}}"> <cite>{{ artigo.autor.nome }}</cite></p>
+            {% if artigo.sumario %}
+                <p>{{ artigo.sumario }}</p>
+            {% else %}
+                <p>{{ artigo.artigo | slice:"80" }} [...]</p>
+            {% endif %}
+            <br>
         </div>
         </a>
       </div>

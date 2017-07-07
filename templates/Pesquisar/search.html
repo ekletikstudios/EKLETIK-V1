@@ -23,18 +23,13 @@
     <br>
     <br>
   <div class="container">
-    <div class="alert alert-dismissable" role="alert">
-      <h2><code>Pesquisar pelo site</code></h2>
         <div class="">
-            <form class="form" method="POST" action="{% url 'Results' %}">
+            <form class="form-group" method="POST" action="{% url 'Results' %}">
                 {% csrf_token %}
-                <input name="pesquisa" type="text" placeholder="O que procura?">
-                <button type="submit" class="btn btn-default">Pesquisar</button>
+                <input class="col-md-6 col-sm-6 col-xs-12" name="pesquisa" type="text" placeholder="à procura de..." autofocus>
+                <!-- <button type="submit" class="btn btn-primary icon-search"></button> -->
             </form>
-
         </div>
-    </div>
-
   </div>
 
 {%endblock%}

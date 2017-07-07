@@ -29,17 +29,15 @@
       </div>
     </div>
 
-    {% if artigo.richmedia %}
-        <div class="col-md-8 col-md-offset-2 animate-box" data-animate-effect="fadeInUp">
-            {{ artigo.artigo | safe | linebreaks}}
-        </div>
-
-    {% else %}
 
         <div class="col-md-8 col-md-offset-2 animate-box" data-animate-effect="fadeInUp">
-            {{ artigo.artigo | linebreaks }}
+            {% if artigo.richmedia %}
+                <article class="markdown">{{ artigo.artigo }}</article>
+            {% else %}
+                <article>{{ artigo.artigo | linebreaks }}</article>
+            {% endif %}
         </div>
-    {% endif %}
+
 
   </div>
 </div>

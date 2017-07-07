@@ -1,11 +1,12 @@
 {% extends 'geral.html' %}
 {% load static from staticfiles %}
+{#{% load markdown_deux_tags %}#}
 
 {% block theme-css %}
 <link rel="stylesheet" href="{% static "css/geral.css" %}">
 {% endblock theme-css %}
 {% block theme-js %}
-	<script src="{% static "js/geral.js" %}"></script>
+<script src="{% static "js/geral.js" %}"></script>
 {% endblock theme-js %}
 
 
@@ -28,31 +29,22 @@
         <div class="row animate-box row-pb-md" data-animate-effect="fadeInUp">
           <div class="col-md-8 col-md-offset-2 text-left ek-heading">
             <span class="text-center">{{ data }}</span>
-            <h2 class="text-center">{{ titulo }}
-                {% if user.is_authenticated %}
-                    <a href="{% url 'addArtigo' %}"><i class="icon-plus2"></i></a>
-                {% endif %}</h2>
-              <p class="text-center">Escrito por <a href="{% url 'doautor' autor.nome %}"> <kbd>{{ autor.nome }}</kbd></a></p>
-          {% if artigo.get_status_display != 'Publicado' %}
+            <h2 class="text-center">{{ titulo }}</h2>
               <p class="text-center">
-              <span>{{ artigo.get_status_display }}</span>
+                  Escrito por
+                  <a href="{% url 'doautor' autor.nome %}">
+                  <code>{{ autor.nome }}</code>
+                  </a>
               </p>
-          {% endif %}
           </div>
         </div>
-
-        {% if artigo.richmedia %}
-            <div class="col-md-8 col-md-offset-2 animate-box" data-animate-effect="fadeInUp">
-                {{ conteudo | safe | linebreaks }}
-            </div>
-
-        {% else %}
-
-            <div class="col-md-8 col-md-offset-2 animate-box" data-animate-effect="fadeInUp">
-                {{ conteudo | linebreaks }}
-            </div>
-        {% endif %}
-
+                <div class="col-md-8 col-md-offset-2 animate-box" data-animate-effect="fadeInUp">
+                    {% if artigo.richmedia %}
+                       <article class="markdown">{{ conteudo }}</article>
+                    {% else %}
+                        <article>{{ conteudo | linebreaks }}</article>
+                    {% endif %}
+                </div>
       </div>
     </div>
 

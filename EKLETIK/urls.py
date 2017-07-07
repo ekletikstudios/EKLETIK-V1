@@ -29,6 +29,7 @@ from Pesquisar import views as Pesquisar
 
 from django.contrib.auth.views import *
 from django.conf import settings
+from django.conf.urls import include
 from django.conf.urls.static import static
 #admin.autodiscover()
 
@@ -40,54 +41,52 @@ urlpatterns = [
     url(r'^wp.*', EK.Erro, name='404'),
     url(r'^login.*', EK.Erro, name='404'),
     url(r'^door/', admin.site.urls),
+    #url(r'^tinymce/', include('tinymce.urls')),
+    url(r'^markdownx/', include('markdownx.urls')),
     url(r'^logout/$', logout, {'template_name': 'admin/logout.html'}, name='logout'),
 
     # EK URLs
     url(r'^$', EK.home, name='home'),
     url(r'^empresa/', EK.empresa, name='empresa'),
-    url(r'portfolio/(?P<item>\D+)', P.portfolioItem, name='portfolioItem'),
+    url(r'^portfolio/(?P<item>\D+)', P.portfolioItem, name='portfolioItem'),
     url(r'^portfolio/', P.portfolio, name='portfolio'),
     url(r'^contacto/', EK.contacto, name='contacto'),
     url(r'^pedido/', EK.pedido, name='pedido'),
 
-
-
-
     # Blogue
-    url(r'^blog/artigos/adicionar$', B.artigo_add, name='addArtigo'),
-    url(r'^blog/add/', B.artigo_add, name='addArtigo'),
-    url(r'^blog/artigos/autor/(?P<autor>\D+)', B.doautor, name='doautor'),
-    url(r'^blog/artigos/(?P<titulo>\D+)', B.artigo, name='artigo'),
+    url(r'^blog/adicionar$', B.artigo_add, name='addArtigo'),
+    url(r'^blog/add$', B.artigo_add, name='addArtigo'),
+    url(r'^blog/autor/(?P<autor>\D+)', B.doautor, name='doautor'),
+    url(r'^blog/(?P<titulo>\D+)', B.artigo, name='artigo'),
     url(r'^blog/', B.blog, name='blog'),
 
-
-
     # Loja
-    url(r'^loja/producto/albums/(?P<album>\D+)', L.LojaAlbum, name='album'),
-    url(r'^loja/producto/livros/(?P<livro>\D+)', L.LojaLivro, name='livro'),
+    url(r'^loja/(?P<album>\D+)', L.LojaAlbum, name='album'),
+    url(r'^loja/(?P<livro>\D+)', L.LojaLivro, name='livro'),
     url(r'^loja/compra/(?P<keyword>\D+)/', L.Compra, name='Compra'),
     url(r'^loja/', L.Loja, name='loja'),
 
-
-
     # Azinca
-    url(r'^azinca/', A.azinca, name='azinca'),
-
-
-
+    url(r'^azinca/', EK.Brevemente, name='azinca'),
 
     # ReceitaME
-    url(r'^receitas/', R.receitas, name='receitas'),
-    # url(r'^receita-me/', EK.receitas, name='receita-me'),
+    url(r'^receitas/', EK.Brevemente, name='receitas'),
 
+    # Vimos
+    url(r'^vimos/', EK.Brevemente, name='vimos'),
 
+    # Designers
+    url(r'^designers/', EK.Brevemente, name='designers'),
 
+    # Developers
+    url(r'^developers/', EK.Brevemente, name='developers'),
+
+    # APIs
+    url(r'^apis/', EK.Brevemente, name='apis'),
+    url(r'^api/', EK.Brevemente, name='api'),
 
     # Forum
-    url(r'^forum/', F.forum, name='forum'),
-
-
-
+    url(r'^forum/', EK.Brevemente, name='forum'),
 
     # Pesquisar
     url(r'procurar/resultados/', Pesquisar.Results, name='Results'),

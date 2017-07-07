@@ -1,0 +1,50 @@
+______________ Desenvolvimento do Website ___________________
+
+
+APPS: [Azinca, Blog, Ek (principal), Forum, Loja, Pesquisas, Receitas]
+
+
+Estilos (static styles):
+  -----------------
+  Google Fonts: Open Sans, Playfair, Merriweather.
+  -----------------
+  bootstrap.css
+  animate.css
+  icomoon.css
+  simple-line-icons.css
+  magnific-popup.css
+  -----------------
+  geral.css
+  -----------------
+  nav.css
+  header.css
+  blog.css
+  body.css
+  servicos.css
+  parceiros.css
+  projectos.css
+  call-to-action.css
+  footer.css
+  ------------------
+  Loja: flexslider.css
+  Loja: owl.carousel.min.css
+  Loja: owl.theme.default.min.css
+  Loja: style.css
+  ------------------
+
+JavaScript (static JS):
+  modernizr-2.6.2.min.js
+  respond.min.js
+  jquery.min.js
+  jquery.easing.1.3.js
+  bootstrap.min.js
+  jquery.waypoints.min.js
+  jquery.stellar.min.js
+  jquery.magnific-popup.min.js
+  magnific-popup-options.js
+  ---------------------
+  geral.css
+  ---------------------
+  Loja: owl.carousel.min.js
+  Loja: jquery.flexslider-min.js
+  LOja: main.js

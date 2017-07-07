@@ -20,17 +20,19 @@ def blog(request):
 
 def artigo(request, titulo):
     a = titulo.replace('-', ' ').title()
-
+    a = titulo
     try:
         artigo = Artigo.objects.get(titulo=titulo)
-
+        slug = artigo.slug
         if request.user.is_authenticated:
             auth = True
         else:
             auth = False
 
     except Artigo.DoesNotExist:
-        raise Http404('Hmmm, artigo {} não exite!'.format(titulo))
+        return render(request, '404.html',{
+            'origem': titulo,
+        })
     return render(request, 'Blog/artigo.html', {
         'auth': auth,
         'main': 'blog',
@@ -38,8 +40,8 @@ def artigo(request, titulo):
         'titulo': titulo,
         'artigo': artigo,
         'autor': artigo.autor,
-        'imagem_do_autor': artigo.autor.perfil.url,
-        #'imagem_do_artigo': artigo.imagem.url,
+        'imagem_do_autor': artigo.autor.imagem.url,
+        'slug': slug,
         'data': artigo.data,
         'conteudo': artigo.artigo,
     })
@@ -78,7 +80,7 @@ def autor(request):
 
 def doautor(request, autor):
     p = Pessoa.objects.get(nome=autor)
-    relacionados = Artigo.objects.filter(autor=p).order_by('-data')
+    relacionados = Artigo.objects.filter(autor=p).order_by('-data').filter(status='p')
     return render(request, 'Blog/doautor.html',{
         'main': 'blog',
         'pagina': 'Artigos',

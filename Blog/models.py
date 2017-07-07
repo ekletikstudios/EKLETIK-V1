@@ -2,6 +2,9 @@
 from ModelsLibraries import *
 from Ek.models import *
 
+
+
+
 # Create your models here.
 class Artigo(models.Model):
     titulo   = models.CharField(max_length=100)
@@ -16,9 +19,21 @@ class Artigo(models.Model):
     data   = models.DateField(auto_now=False, default=date.today)
     status = models.CharField(max_length=1, choices=STATUS_CHOICES, default='d')
 
+    slug = models.SlugField(unique=True, default=uuid.uuid1)
+
+    @models.permalink
+    def get_absolute_url(self):
+        return self.titulo
+
     class Meta:
         verbose_name_plural = 'Artigos, Blogues e Notícias'
 
     def __str__(self):
         return self.titulo
 #end Artigos
+
+
+
+class Texto(models.Model):
+    artigo = models.ForeignKey(Artigo)
+#end Texto

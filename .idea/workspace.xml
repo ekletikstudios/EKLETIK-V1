@@ -2,40 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f6c44c40-4e0a-4409-b8c3-6236bc6f64f3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/100.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/EKLETIK.iml" afterPath="$PROJECT_DIR$/.idea/EKLETIK.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Blog/blog.py" afterPath="$PROJECT_DIR$/Blog/blog.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Blog/migrations/0001_initial.py" afterPath="$PROJECT_DIR$/Blog/migrations/0001_initial.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Blog/models.py" afterPath="$PROJECT_DIR$/Blog/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EKLETIK/settings.py" afterPath="$PROJECT_DIR$/EKLETIK/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EKLETIK/urls.py" afterPath="$PROJECT_DIR$/EKLETIK/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Ek/admin.py" afterPath="$PROJECT_DIR$/Ek/admin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Ek/models.py" afterPath="$PROJECT_DIR$/Ek/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Ek/views.py" afterPath="$PROJECT_DIR$/Ek/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Loja/models.py" afterPath="$PROJECT_DIR$/Loja/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ModelsLibraries.py" afterPath="$PROJECT_DIR$/ModelsLibraries.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pesquisar/views.py" afterPath="$PROJECT_DIR$/Pesquisar/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewsLibraries.py" afterPath="$PROJECT_DIR$/ViewsLibraries.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ek_static/css/geral.css" afterPath="$PROJECT_DIR$/ek_static/css/geral.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/Blog/artigo.html" afterPath="$PROJECT_DIR$/templates/Blog/artigo.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/Blog/blog.html" afterPath="$PROJECT_DIR$/templates/Blog/blog.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/Blog/doautor.html" afterPath="$PROJECT_DIR$/templates/Blog/doautor.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/Ek/ek.html" afterPath="$PROJECT_DIR$/templates/Ek/ek.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/Ek/empresa.html" afterPath="$PROJECT_DIR$/templates/Ek/empresa.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/Ek/portfolio-item.html" afterPath="$PROJECT_DIR$/templates/Ek/portfolio-item.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/Ek/portfolio.html" afterPath="$PROJECT_DIR$/templates/Ek/portfolio.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/Loja/album.html" afterPath="$PROJECT_DIR$/templates/Loja/album.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/Loja/loja.html" afterPath="$PROJECT_DIR$/templates/Loja/loja.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/Pesquisar/results.html" afterPath="$PROJECT_DIR$/templates/Pesquisar/results.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/Pesquisar/search.html" afterPath="$PROJECT_DIR$/templates/Pesquisar/search.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base_loja.html" afterPath="$PROJECT_DIR$/templates/base_loja.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/geral.html" afterPath="$PROJECT_DIR$/templates/geral.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/css/blog.css" afterPath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/css/blog.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/css/geral.css" afterPath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/css/geral.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -66,7 +34,7 @@
         <entry file="file://$PROJECT_DIR$/templates/Ek/ek.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="152">
-              <caret line="95" column="38" lean-forward="true" selection-start-line="95" selection-start-column="38" selection-end-line="95" selection-end-column="38" />
+              <caret line="95" column="38" lean-forward="false" selection-start-line="95" selection-start-column="38" selection-end-line="95" selection-end-column="38" />
               <folding>
                 <element signature="n#block#1;n#!!top" expanded="false" />
                 <element signature="n#block#2;n#!!top" expanded="false" />
@@ -78,11 +46,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="empresa.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="empresa.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/Ek/empresa.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="187" column="0" lean-forward="true" selection-start-line="187" selection-start-column="0" selection-end-line="187" selection-end-column="0" />
+            <state relative-caret-position="-123">
+              <caret line="186" column="51" lean-forward="true" selection-start-line="186" selection-start-column="51" selection-end-line="186" selection-end-column="51" />
               <folding>
                 <element signature="n#block#3;n#!!top" expanded="false" />
                 <element signature="e#570#1015#0#HTML" expanded="false" />
@@ -100,22 +68,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="geral.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ek_static/css/geral.css">
+      <file leaf-file-name="geral.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/geral.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="704" column="22" lean-forward="true" selection-start-line="704" selection-start-column="22" selection-end-line="704" selection-end-column="22" />
-              <folding />
+            <state relative-caret-position="3270">
+              <caret line="233" column="26" lean-forward="true" selection-start-line="233" selection-start-column="26" selection-end-line="233" selection-end-column="26" />
+              <folding>
+                <element signature="n#block#9;n#!!top" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="portfolio.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="portfolio.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/Ek/portfolio.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="36" column="51" lean-forward="false" selection-start-line="36" selection-start-column="51" selection-end-line="36" selection-end-column="51" />
-              <folding />
+            <state relative-caret-position="153">
+              <caret line="40" column="28" lean-forward="true" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
+              <folding>
+                <element signature="e#397#719#0#HTML" expanded="false" />
+                <element signature="e#795#1166#0#HTML" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -124,7 +97,7 @@
         <entry file="file://$PROJECT_DIR$/templates/Blog/blog.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="193">
-              <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+              <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -154,7 +127,7 @@
         <entry file="file://$PROJECT_DIR$/EKLETIK/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
-              <caret line="64" column="60" lean-forward="true" selection-start-line="64" selection-start-column="60" selection-end-line="64" selection-end-column="60" />
+              <caret line="64" column="60" lean-forward="false" selection-start-line="64" selection-start-column="60" selection-end-line="64" selection-end-column="60" />
               <folding>
                 <element signature="e#641#673#0" expanded="true" />
               </folding>
@@ -238,7 +211,6 @@
         <option value="$PROJECT_DIR$/templates/Loja/album.html" />
         <option value="$PROJECT_DIR$/templates/100.html" />
         <option value="$PROJECT_DIR$/Ek/views.py" />
-        <option value="$PROJECT_DIR$/templates/geral.html" />
         <option value="$PROJECT_DIR$/EKLETIK/settings.py" />
         <option value="$PROJECT_DIR$/Ek/admin.py" />
         <option value="$PROJECT_DIR$/ModelsLibraries.py" />
@@ -248,13 +220,14 @@
         <option value="$PROJECT_DIR$/Blog/models.py" />
         <option value="$PROJECT_DIR$/EKLETIK/urls.py" />
         <option value="$PROJECT_DIR$/templates/Loja/loja.html" />
-        <option value="$PROJECT_DIR$/templates/Ek/portfolio.html" />
         <option value="$PROJECT_DIR$/templates/Blog/blog.html" />
         <option value="$PROJECT_DIR$/Blog/blog.py" />
         <option value="$PROJECT_DIR$/templates/Blog/artigo.html" />
         <option value="$PROJECT_DIR$/templates/Ek/ek.html" />
         <option value="$PROJECT_DIR$/ek_static/css/geral.css" />
         <option value="$PROJECT_DIR$/templates/Ek/empresa.html" />
+        <option value="$PROJECT_DIR$/templates/geral.html" />
+        <option value="$PROJECT_DIR$/templates/Ek/portfolio.html" />
       </list>
     </option>
   </component>
@@ -309,42 +282,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EKLETIK" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EKLETIK" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Ek" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EKLETIK" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EKLETIK" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Blog" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -881,19 +818,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/geral.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="90" column="45" lean-forward="false" selection-start-line="90" selection-start-column="45" selection-end-line="90" selection-end-column="45" />
-          <folding>
-            <element signature="n#nav#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#block#9;n#!!top" expanded="false" />
-            <element signature="n#footer#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#footer#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Ek/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
@@ -988,14 +912,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base_loja.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="57" lean-forward="false" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Loja/loja.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
@@ -1028,25 +944,17 @@
     <entry file="file://$PROJECT_DIR$/EKLETIK/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="64" column="60" lean-forward="true" selection-start-line="64" selection-start-column="60" selection-end-line="64" selection-end-column="60" />
+          <caret line="64" column="60" lean-forward="false" selection-start-line="64" selection-start-column="60" selection-end-line="64" selection-end-column="60" />
           <folding>
             <element signature="e#641#673#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/Ek/portfolio.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="36" column="51" lean-forward="false" selection-start-line="36" selection-start-column="51" selection-end-line="36" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/Blog/blog.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="193">
-          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1070,7 +978,7 @@
     <entry file="file://$PROJECT_DIR$/templates/Ek/ek.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
-          <caret line="95" column="38" lean-forward="true" selection-start-line="95" selection-start-column="38" selection-end-line="95" selection-end-column="38" />
+          <caret line="95" column="38" lean-forward="false" selection-start-line="95" selection-start-column="38" selection-end-line="95" selection-end-column="38" />
           <folding>
             <element signature="n#block#1;n#!!top" expanded="false" />
             <element signature="n#block#2;n#!!top" expanded="false" />
@@ -1084,15 +992,15 @@
     <entry file="file://$PROJECT_DIR$/ek_static/css/geral.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="215">
-          <caret line="704" column="22" lean-forward="true" selection-start-line="704" selection-start-column="22" selection-end-line="704" selection-end-column="22" />
+          <caret line="704" column="22" lean-forward="false" selection-start-line="704" selection-start-column="22" selection-end-line="704" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/Ek/empresa.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="187" column="0" lean-forward="true" selection-start-line="187" selection-start-column="0" selection-end-line="187" selection-end-column="0" />
+        <state relative-caret-position="-123">
+          <caret line="186" column="51" lean-forward="true" selection-start-line="186" selection-start-column="51" selection-end-line="186" selection-end-column="51" />
           <folding>
             <element signature="n#block#3;n#!!top" expanded="false" />
             <element signature="e#570#1015#0#HTML" expanded="false" />
@@ -1105,6 +1013,35 @@
             <element signature="e#6254#6639#0#HTML" expanded="false" />
             <element signature="e#6647#7039#0#HTML" expanded="false" />
             <element signature="e#7100#7483#0#HTML" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base_loja.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="58" lean-forward="true" selection-start-line="33" selection-start-column="58" selection-end-line="33" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/geral.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3270">
+          <caret line="233" column="26" lean-forward="true" selection-start-line="233" selection-start-column="26" selection-end-line="233" selection-end-column="26" />
+          <folding>
+            <element signature="n#block#9;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Ek/portfolio.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="40" column="28" lean-forward="true" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
+          <folding>
+            <element signature="e#397#719#0#HTML" expanded="false" />
+            <element signature="e#795#1166#0#HTML" expanded="false" />
           </folding>
         </state>
       </provider>

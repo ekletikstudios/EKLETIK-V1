@@ -42,7 +42,7 @@ urlpatterns = [
     url(r'^login.*', EK.Erro, name='404'),
     url(r'^door/', admin.site.urls),
     #url(r'^tinymce/', include('tinymce.urls')),
-    url(r'^markdownx/', include('markdownx.urls')),
+    #url(r'^markdownx/', include('markdownx.urls')),
     url(r'^logout/$', logout, {'template_name': 'admin/logout.html'}, name='logout'),
 
     # EK URLs

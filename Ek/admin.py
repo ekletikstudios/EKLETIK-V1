@@ -3,8 +3,6 @@
 # Django Essentials
 from __future__ import unicode_literals
 from django.contrib import admin
-#from markdownx.admin import MarkdownxModelAdmin
-#from markdownx.widgets import AdminMarkdownxWidget
 
 # Importing Project Models
 from Ek.models import *
@@ -129,7 +127,6 @@ admin.site.register(Artigo, ArtigoAdmin)
 admin.site.register(Projecto, ProjectoAdmin)
 admin.site.register(Album, AlbumAdmin)
 admin.site.register(Livro, LivroAdmin)
-# admin.site.register(Texto, MarkdownxModelAdmin)
 #admin.site.register(Item, ItemAdmin)
 #admin.site.register(Solicitacao, SolicitacaoAdmin)
 #admin.site.register(Pessoa, PessoaAdmin)

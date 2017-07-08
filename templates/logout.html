@@ -1,0 +1,39 @@
+{% extends 'geral.html' %}
+{% load static from staticfiles %}
+{% block mainlink %}<div id="ek-logo"><a href="{% url 'home' %}">::<span>Logout</span> </a></div>{% endblock mainlink %}
+
+
+{% block theme-css %}
+<link rel="stylesheet" href="{% static "css/geral.css" %}">
+{% endblock theme-css %}
+{% block theme-js %}
+	<script src="{% static "js/geral.js" %}"></script>
+{% endblock theme-js %}
+
+{% block call-to-action %}
+{% endblock %}
+
+
+
+{%block header%}
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  <div class="container">
+    <div class="alert alert-dismissable" role="alert">
+      <h2><kbd>Desconectado</kbd></h2>
+      <p>Você acabou de fazer o log out.</br>
+      </p>
+      <hr>
+      <p>Caso queira, poderá voltar à <a href="{% url 'home'%}"><kbd>página incial</kbd></a> e continuar a navegar no site.
+      </p>
+      <hr>
+      <p>Se acredita estar a ver essa página por engano, tente fazer login com os seus credenciais.</p>
+    </div>
+
+  </div>
+
+{%endblock%}

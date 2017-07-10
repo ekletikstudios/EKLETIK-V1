@@ -44,8 +44,15 @@ def artigo(request, titulo):
         'slug': slug,
         'data': artigo.data,
         'conteudo': artigo.artigo,
+        'id': artigo.id,
     })
 
+
+
+
+def django(request):
+    a = Artigo.objects.get(id=3)
+    return artigo(request, a.titulo)
 
 
 def artigo_add(request):

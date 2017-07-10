@@ -40,3 +40,11 @@ class Projecto(models.Model):
     def Cores(self):
         return self.totalCores
 #end Projecto
+
+
+class Cor(models.Model):
+    projecto = models.ForeignKey(Projecto)
+    cor_em_HEX = models.CharField(max_length=7)
+    def __str__(self):
+        return self.cor_em_HEX
+#end Cor

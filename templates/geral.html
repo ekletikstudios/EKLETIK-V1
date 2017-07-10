@@ -10,7 +10,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     {% if pagina == 'Ekletik' %}
-    <title>Ekletik Studios :: Página Inicial</title>
+    <title>Ekletik Studios</title>
     {% else %}
 	<title>{% if pagina %}{{ pagina }}{% endif %} :: Ekletik Studios</title>
     {% endif %}
@@ -87,11 +87,11 @@
 				<div class="row">
 					<div class="col-xs-2 text-left">
 						{% if pagina == 'Ekletik' %}
-                        <div id="ek-logo"><a href="{% url 'home' %}">{{pagina}}<code>beta</code></a></div>
+                            <div id="ek-logo"><a href="{% url 'home' %}">{{pagina}}</a></div>
                         {% else %}
                         {% block mainlink %}
                             {% if main %}
-                            <div id="ek-logo"><a href="{% url main %}">::<kbd>{{pagina}}</kbd> </a></div>
+                                <div id="ek-logo"><a href="{% url main %}">::<kbd>{{pagina}}</kbd> </a></div>
                             {% else %}
                                 <div id="ek-logo"><a href="{% url 'home' %}">::<kbd>{{ pagina }}</kbd></a></div>
                             {% endif %}

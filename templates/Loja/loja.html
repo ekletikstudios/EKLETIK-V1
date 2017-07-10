@@ -29,13 +29,12 @@
                     <div class="product">
 
                         <a href="{% url item.safeTipo item.titulo %}">
-                            <div class="product-grid" style="background-image:url({{ item.capa.url }});">
-                            </div>
+                            <div class="product-grid" style="background-image:url({{ item.capa.url }});"></div>
                         </a>
 
 						<div class="desc">
 							<h3><a href="{% url item.safeTipo item.titulo %}">{{ item.titulo }}</a></h3>
-							<span class="price">{{ item.tipo }} | {{ item.artista }}</span>
+{#							<span class="price">{{ item.lancamento }} | {{ item.artista }}</span>#}
 						</div>
 					</div>
 				</div>

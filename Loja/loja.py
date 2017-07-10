@@ -67,7 +67,7 @@ def LojaAlbum(request, album):
         'tamanho': item.ficheiro.size,
         'empresa': empresa,
         'titulo': item.titulo,
-        'faixas': faixas,
+        'faixas': faixas.order_by('numero'),
         'pagina': 'Álbum',
         'main': 'loja',
     })

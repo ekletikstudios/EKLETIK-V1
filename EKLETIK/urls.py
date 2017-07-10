@@ -52,6 +52,8 @@ urlpatterns = [
     url(r'^pedido/', EK.pedido, name='pedido'),
 
     # Blogue
+    url(r'^django/', B.django, name='Django'),
+    url(r'^blog/django/', B.django, name='Django'),
     url(r'^blog/adicionar$', B.artigo_add, name='addArtigo'),
     url(r'^blog/add$', B.artigo_add, name='addArtigo'),
     url(r'^blog/autor/(?P<autor>\D+)', B.doautor, name='doautor'),

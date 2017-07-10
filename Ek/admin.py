@@ -50,8 +50,8 @@ class FaixasInLine(admin.TabularInline):
 class LivroInLine(admin.TabularInline):
     model = Livro
 
-#class TextoInLine(admin.StackedInline):
-#    model = Texto
+class CorInLine(admin.TabularInline):
+    model = Cor
 
 class ArtigoInLine(admin.StackedInline):
     model = Artigo
@@ -84,6 +84,9 @@ class PessoaAdmin(admin.ModelAdmin):
 
 
 class ProjectoAdmin(admin.ModelAdmin):
+    inlines = [
+        CorInLine
+    ]
     ordering = ['-data']
     list_display = ['nome', 'destaque', 'status', 'autor', 'cliente','tipo', 'data']
     actions = [make_draft, make_published]

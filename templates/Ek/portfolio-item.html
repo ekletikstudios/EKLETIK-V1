@@ -21,21 +21,36 @@
 <div id="ek-blog" class="ek-bg-section">
   <div class="container">
     <div class="row animate-box row-pb-md" data-animate-effect="fadeInUp">
-      <div class="col-md-8 col-md-offset-2 text-left ek-heading">
+
+        <div class="col-md-8 col-md-offset-2 text-left ek-heading">
 
           <span class="">{{ tipo }}</span>
             <h2 class="">{{ nome }}</h2>
             <p class="">{{ descricao | safe | linebreaks}}</p>
+
+            {% if cores %}
             <span class="Paleta">Paleta</span>
 
-            {% for cor in paleta %}
-                {% if cor is not 0 %}
-                    <p class="{{ nome }}" style="background-color:{{ cor }}; border: solid; border-color: #000">{{ cor }}</p>
-                {% endif %}
-            {% endfor %}
+                {% for cor in cores %}
+
+                    {% if cor.cor_em_HEX == "#FFFFFF" %}
+                        <p class="{{ nome }}" style="background:{{ cor }}; border: solid; border-width: 1px; border-radius: 5px; border-color:#000">
+                            {{ cor|lower }}
+                        </p>
+                    {% else %}
+                        <p class="{{ nome }}" style="background:{{ cor }}; border: solid; border-width: 4px; border-radius: 5px; border-color:{{ cor }}">
+                            {{ cor|lower }}
+                        </p>
+                    {% endif %}
+
+                {% endfor %}
+
+            {% endif %}
+
             <span>Cliente: <kbd>{{ cliente }}</kbd></span>
             <hr>
-      </div>
+        </div>
+
     </div>
 
              <div class="row animate-box row-pb-md" id="Album">
@@ -51,7 +66,13 @@
   </div>
 
     <div class="container">
-
+        <div class="text-center">
+            <p>
+                <a href="">
+                    <code>Próximo Projecto</code>
+                </a>
+            </p>
+        </div>
     </div>
 </div>
 

@@ -16,7 +16,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '9+$8!kj9c*t8ezyu)5sorlv&forlc#@kv1_z!b8vmnl(7^g$cj'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['.ekletik.com', '.localtunnel.me', '127.0.0.1']
 
@@ -105,5 +105,5 @@ MEDIA_URL = '/media/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'ek_static'),]
 STATIC_ROOT = 'var/www/ekletik.com/ek_static/'
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'ek_media')
-#MEDIA_ROOT = '/var/www/ekletik.com/ek_media/'
+#MEDIA_ROOT = os.path.join(BASE_DIR, 'ek_media')
+MEDIA_ROOT = '/var/www/ekletik.com/ek_media/'

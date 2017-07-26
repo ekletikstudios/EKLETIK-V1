@@ -2,25 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f6c44c40-4e0a-4409-b8c3-6236bc6f64f3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Serializers.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/requirements.txt" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Azinca/azinca.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Forum/forum.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Receitas/receitas.py" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Blog/blog.py" afterPath="$PROJECT_DIR$/Blog/views.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Loja/loja.py" afterPath="$PROJECT_DIR$/Loja/views.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Portfolio/portfolio.py" afterPath="$PROJECT_DIR$/Portfolio/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Azinca/views.py" afterPath="$PROJECT_DIR$/Azinca/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EKLETIK/settings.py" afterPath="$PROJECT_DIR$/EKLETIK/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EKLETIK/urls.py" afterPath="$PROJECT_DIR$/EKLETIK/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Ek/views.py" afterPath="$PROJECT_DIR$/Ek/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Forum/views.py" afterPath="$PROJECT_DIR$/Forum/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pesquisar/spotify.py" afterPath="$PROJECT_DIR$/Pesquisar/spotify.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pesquisar/views.py" afterPath="$PROJECT_DIR$/Pesquisar/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Receitas/views.py" afterPath="$PROJECT_DIR$/Receitas/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewsLibraries.py" afterPath="$PROJECT_DIR$/ViewsLibraries.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -61,7 +43,7 @@
         <entry file="file://$PROJECT_DIR$/Serializers.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="495">
-              <caret line="33" column="59" lean-forward="true" selection-start-line="33" selection-start-column="59" selection-end-line="33" selection-end-column="59" />
+              <caret line="33" column="59" lean-forward="false" selection-start-line="33" selection-start-column="59" selection-end-line="33" selection-end-column="59" />
               <folding>
                 <element signature="e#70#108#0" expanded="true" />
               </folding>
@@ -69,12 +51,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="requirements.txt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="requirements.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/requirements.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
-              <caret line="4" column="13" lean-forward="true" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+              <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/EKLETIK/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+              <folding>
+                <element signature="e#593#900#0" expanded="false" />
+                <element signature="e#915#1314#0" expanded="false" />
+                <element signature="e#1359#1874#0" expanded="false" />
+                <element signature="e#1935#2063#0" expanded="false" />
+                <element signature="e#2092#2488#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -164,7 +162,6 @@
         <option value="$PROJECT_DIR$/Portfolio/portfolio.py" />
         <option value="$PROJECT_DIR$/Blog/blog.py" />
         <option value="$PROJECT_DIR$/Loja/loja.py" />
-        <option value="$PROJECT_DIR$/EKLETIK/settings.py" />
         <option value="$PROJECT_DIR$/ViewsLibraries.py" />
         <option value="$PROJECT_DIR$/Ek/views.py" />
         <option value="$PROJECT_DIR$/Pesquisar/spotify.py" />
@@ -172,6 +169,7 @@
         <option value="$PROJECT_DIR$/EKLETIK/urls.py" />
         <option value="$PROJECT_DIR$/serializers.py" />
         <option value="$PROJECT_DIR$/requirements.txt" />
+        <option value="$PROJECT_DIR$/EKLETIK/settings.py" />
       </list>
     </option>
   </component>
@@ -208,6 +206,20 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="EKLETIK" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EKLETIK" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EKLETIK" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EKLETIK" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="EKLETIK" />
@@ -801,20 +813,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EKLETIK/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding>
-            <element signature="e#592#899#0" expanded="false" />
-            <element signature="e#914#1313#0" expanded="false" />
-            <element signature="e#1358#1873#0" expanded="false" />
-            <element signature="e#1934#2062#0" expanded="false" />
-            <element signature="e#2091#2487#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Blog/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -955,7 +953,7 @@
     <entry file="file://$PROJECT_DIR$/Serializers.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
-          <caret line="33" column="59" lean-forward="true" selection-start-line="33" selection-start-column="59" selection-end-line="33" selection-end-column="59" />
+          <caret line="33" column="59" lean-forward="false" selection-start-line="33" selection-start-column="59" selection-end-line="33" selection-end-column="59" />
           <folding>
             <element signature="e#70#108#0" expanded="true" />
           </folding>
@@ -965,8 +963,22 @@
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="4" column="13" lean-forward="true" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EKLETIK/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding>
+            <element signature="e#593#900#0" expanded="false" />
+            <element signature="e#915#1314#0" expanded="false" />
+            <element signature="e#1359#1874#0" expanded="false" />
+            <element signature="e#1935#2063#0" expanded="false" />
+            <element signature="e#2092#2488#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

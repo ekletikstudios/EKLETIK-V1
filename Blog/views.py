@@ -104,14 +104,3 @@ def doautor(request, autor):
 
 
 
-
-# API Views...
-class ArtigoListAPI(APIView):
-    def get(self, request):
-        artigos = Artigo.objects.all().filter(status='p').order_by('data')
-        serializer = ArtigoSerializer(artigos, many=True)
-        return Response(serializer.data)
-
-    def post(self):
-        pass
-#end ArtigoListAPI

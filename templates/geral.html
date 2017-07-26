@@ -91,9 +91,9 @@
                         {% else %}
                         {% block mainlink %}
                             {% if main %}
-                                <div id="ek-logo"><a href="{% url main %}">::<kbd>{{pagina}}</kbd> </a></div>
+                                <div id="ek-logo"><a href="{% url main %}">::{{pagina}}</a></div>
                             {% else %}
-                                <div id="ek-logo"><a href="{% url 'home' %}">::<kbd>{{ pagina }}</kbd></a></div>
+                                <div id="ek-logo"><a href="{% url 'home' %}">::{{ pagina }}</a></div>
                             {% endif %}
                         {% endblock mainlink %}
                         {% endif %}

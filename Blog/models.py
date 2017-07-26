@@ -28,8 +28,14 @@ class Artigo(models.Model):
     class Meta:
         verbose_name_plural = 'Artigos, Blogues e Notícias'
 
+    def get_autor(self):
+        Nome_Autor = self.get_autor()
+        return Nome_Autor
+
     def __str__(self):
         return self.titulo
+
+
 #end Artigos
 
 

@@ -119,12 +119,3 @@ def LojaLivro(request, livro):
 
 ##################################################################
 
-# API Views...
-class AlbumListAPI(APIView):
-    def get(self, request):
-        albums = Album.objects.all().filter(status='p')
-        serializer = AlbumSerializer(albums, many=True)
-        return Response(serializer.data)
-
-    def post(self):
-        pass

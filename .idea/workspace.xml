@@ -2,7 +2,251 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f6c44c40-4e0a-4409-b8c3-6236bc6f64f3" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Ek/api_views.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/admin/css/base.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/admin/css/changelists.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/admin/css/dashboard.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/admin/css/fonts.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/admin/css/forms.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/admin/css/login.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/admin/css/rtl.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/admin/css/widgets.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/admin/fonts/LICENSE.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/admin/fonts/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/admin/fonts/Roboto-Bold-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/admin/fonts/Roboto-Light-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/admin/fonts/Roboto-Regular-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/admin/img/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/admin/img/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/admin/img/calendar-icons.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/admin/img/gis/move_vertex_off.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/admin/img/gis/move_vertex_on.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/admin/img/icon-addlink.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/admin/img/icon-alert.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/admin/img/icon-calendar.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/admin/img/icon-changelink.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/admin/img/icon-clock.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/admin/img/icon-deletelink.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/admin/img/icon-no.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/admin/img/icon-unknown-alt.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/admin/img/icon-unknown.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/admin/img/icon-yes.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/admin/img/inline-delete.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/admin/img/search.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/admin/img/selector-icons.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/admin/img/sorting-icons.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/admin/img/tooltag-add.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/admin/img/tooltag-arrowright.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/admin/js/SelectBox.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/admin/js/SelectFilter2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/admin/js/actions.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/admin/js/actions.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/admin/js/admin/DateTimeShortcuts.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/admin/js/admin/RelatedObjectLookups.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/admin/js/calendar.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/admin/js/cancel.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/admin/js/change_form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/admin/js/collapse.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/admin/js/collapse.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/admin/js/core.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/admin/js/inlines.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/admin/js/inlines.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/admin/js/jquery.init.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/admin/js/popup_response.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/admin/js/prepopulate.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/admin/js/prepopulate.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/admin/js/prepopulate_init.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/admin/js/timeparse.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/admin/js/urlify.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/admin/js/vendor/jquery/LICENSE-JQUERY.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/admin/js/vendor/jquery/jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/admin/js/vendor/jquery/jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/admin/js/vendor/xregexp/LICENSE-XREGEXP.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/admin/js/vendor/xregexp/xregexp.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/admin/js/vendor/xregexp/xregexp.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/css/animate.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/css/blog.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/css/bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/css/bootstrap.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/css/buttons.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/css/counter.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/css/flexslider.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/css/footer.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/css/geral.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/css/icomoon.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/css/magnific-popup.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/css/main.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/css/nav.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/css/old.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/css/portfolio-cores.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/css/portfolio.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/css/services.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/css/signin.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/css/simple-line-icons.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/css/style.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/css/testimonial.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/fonts/bootstrap/glyphicons-halflings-regular.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/fonts/bootstrap/glyphicons-halflings-regular.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/fonts/bootstrap/glyphicons-halflings-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/fonts/bootstrap/glyphicons-halflings-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/fonts/bootstrap/glyphicons-halflings-regular.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/fonts/icomoon/icomoon.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/fonts/icomoon/icomoon.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/fonts/icomoon/icomoon.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/fonts/icomoon/icomoon.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/fonts/simple-line-icons/Simple-Line-Icons.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/fonts/simple-line-icons/Simple-Line-Icons.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/fonts/simple-line-icons/Simple-Line-Icons.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/fonts/simple-line-icons/Simple-Line-Icons.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/fonts/simple-line-icons/Simple-Line-Icons.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/images/ChatOS.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/images/EkletikPortfolio-01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/images/EkletikPortfolio-02.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/images/EkletikPortfolio-03.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/images/Preloader_2.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/images/Sonzito.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/images/aap.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/images/c-mateus.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/images/c-mateus2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/images/c-mauricio.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/images/c-portfolio - 1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/images/c-portfolio - 3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/images/c-portfolio - 4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/images/code3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/images/ek-pontolivre.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/images/ek-sonzito.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/images/ek-swift.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/images/ek-tord.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/images/ek-xbola.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/images/felipe.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/images/hero-apint.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/images/hero-code.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/images/hero-code2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/images/hero-desk.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/images/hero-homestudio.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/images/hero-komodo.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/images/hero-minified.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/images/hero-principles3a.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/images/hero-principles3b.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/images/hero-principles3bc.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/images/hero-principles3c.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/images/hero_bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/images/img_1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/images/img_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/images/img_3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/images/img_4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/images/img_bg_1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/images/leo.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/images/leoneto.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/images/loader.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/images/mini-principles.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/images/paletas.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/images/paulo.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/images/person1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/images/person2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/images/person3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/images/person4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/images/pontolivre.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/images/pontolivre@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/images/pontolivre@3x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/images/principles.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/images/radioluzeiros.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/images/radioluzeiros.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/images/sonzito-new-01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/images/sonzito.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/images/studio.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/images/swift.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/images/swifty.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/images/work-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/images/work-2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/images/work-3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/images/work-4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/images/work-5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/images/work-6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/images/xbola.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/images/yase.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/js/blog.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/js/bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/js/geral.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/js/jquery.countTo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/js/jquery.easing.1.3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/js/jquery.magnific-popup.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/js/jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/js/jquery.stellar.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/js/jquery.waypoints.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/js/magnific-popup-options.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/js/main.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/js/modernizr-2.6.2.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/js/moment.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/js/respond.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/loja/css/animate.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/loja/css/bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/loja/css/bootstrap.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/loja/css/flexslider.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/loja/css/icomoon.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/loja/css/owl.carousel.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/loja/css/owl.theme.default.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/loja/css/recibos.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/loja/css/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/loja/css/style.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/loja/fonts/bootstrap/glyphicons-halflings-regular.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/loja/fonts/bootstrap/glyphicons-halflings-regular.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/loja/fonts/bootstrap/glyphicons-halflings-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/loja/fonts/bootstrap/glyphicons-halflings-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/loja/fonts/bootstrap/glyphicons-halflings-regular.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/loja/fonts/icomoon/icomoon.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/loja/fonts/icomoon/icomoon.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/loja/fonts/icomoon/icomoon.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/loja/fonts/icomoon/icomoon.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/loja/images/img_bg_1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/loja/images/img_bg_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/loja/images/img_bg_3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/loja/images/img_bg_4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/loja/images/img_bg_5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/loja/images/loader.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/loja/images/loc.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/loja/images/person1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/loja/images/person2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/loja/images/person3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/loja/images/product-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/loja/images/product-2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/loja/images/product-3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/loja/images/product-4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/loja/images/product-5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/loja/images/product-6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/loja/images/product-7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/loja/images/product-8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/loja/images/product-9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/loja/images/product-single-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/loja/images/product-single-2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/loja/images/product-single-3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/loja/images/product-single-4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/loja/images/product-single-5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/loja/js/bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/loja/js/google_map.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/loja/js/jquery.countTo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/loja/js/jquery.easing.1.3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/loja/js/jquery.flexslider-min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/loja/js/jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/loja/js/jquery.waypoints.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/loja/js/main.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/loja/js/modernizr-2.6.2.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/loja/js/owl.carousel.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/loja/js/player.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/www/ekletik.com/ek_static/loja/js/respond.min.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Blog/models.py" afterPath="$PROJECT_DIR$/Blog/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Blog/views.py" afterPath="$PROJECT_DIR$/Blog/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EKLETIK/settings.py" afterPath="$PROJECT_DIR$/EKLETIK/settings.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EKLETIK/urls.py" afterPath="$PROJECT_DIR$/EKLETIK/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Ek/views.py" afterPath="$PROJECT_DIR$/Ek/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Loja/views.py" afterPath="$PROJECT_DIR$/Loja/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Portfolio/views.py" afterPath="$PROJECT_DIR$/Portfolio/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Serializers.py" afterPath="$PROJECT_DIR$/Serializers.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewsLibraries.py" afterPath="$PROJECT_DIR$/ViewsLibraries.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/Ek/portfolio-item.html" afterPath="$PROJECT_DIR$/templates/Ek/portfolio-item.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/geral.html" afterPath="$PROJECT_DIR$/templates/geral.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,14 +272,76 @@
     <favorites_list name="EKLETIK" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/EKLETIK/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="290">
+              <caret line="70" column="0" lean-forward="true" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+              <folding>
+                <element signature="e#592#899#0" expanded="false" />
+                <element signature="e#914#1313#0" expanded="false" />
+                <element signature="e#1358#1873#0" expanded="false" />
+                <element signature="e#1934#2062#0" expanded="false" />
+                <element signature="e#2091#2487#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="portfolio-item.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/Ek/portfolio-item.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="291">
+              <caret line="79" column="19" lean-forward="true" selection-start-line="79" selection-start-column="19" selection-end-line="79" selection-end-column="19" />
+              <folding>
+                <element signature="n#div#0;n#!!top" expanded="false" />
+                <element signature="n#style#0;n#p#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#2;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="api_views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Ek/api_views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="11" lean-forward="false" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/EKLETIK/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="71" column="45" lean-forward="true" selection-start-line="71" selection-start-column="45" selection-end-line="71" selection-end-column="45" />
+            <state relative-caret-position="178">
+              <caret line="85" column="51" lean-forward="true" selection-start-line="85" selection-start-column="51" selection-end-line="85" selection-end-column="51" />
               <folding>
                 <element signature="e#110#142#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Blog/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="113">
+              <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ViewsLibraries.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ViewsLibraries.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="25" lean-forward="false" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+              <folding>
+                <element signature="e#55#94#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -83,11 +389,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/templates/Loja/producto-album.html" />
-        <option value="$PROJECT_DIR$/templates/Spotify/search.html" />
-        <option value="$PROJECT_DIR$/templates/Spotify/results.html" />
-        <option value="$PROJECT_DIR$/ek_static/loja/css/recibos.css" />
-        <option value="$PROJECT_DIR$/templates/Loja/recibo.html" />
         <option value="$PROJECT_DIR$/templates/Pesquisar/results.html" />
         <option value="$PROJECT_DIR$/ek_static/css/nav.css" />
         <option value="$PROJECT_DIR$/ek_static/css/footer.css" />
@@ -106,7 +407,6 @@
         <option value="$PROJECT_DIR$/Blog/migrations/0001_initial.py" />
         <option value="$PROJECT_DIR$/Blog/migrations/0005_artigo_slug.py" />
         <option value="$PROJECT_DIR$/Blog/migrations/0007_auto_20170707_1719.py" />
-        <option value="$PROJECT_DIR$/Blog/models.py" />
         <option value="$PROJECT_DIR$/templates/Blog/blog.html" />
         <option value="$PROJECT_DIR$/ek_static/css/geral.css" />
         <option value="$PROJECT_DIR$/templates/Ek/portfolio.html" />
@@ -117,23 +417,29 @@
         <option value="$PROJECT_DIR$/templates/Ek/empresa.html" />
         <option value="$PROJECT_DIR$/Ek/admin.py" />
         <option value="$PROJECT_DIR$/Portfolio/models.py" />
-        <option value="$PROJECT_DIR$/templates/Ek/portfolio-item.html" />
         <option value="$PROJECT_DIR$/Ek/serializers.py" />
         <option value="$PROJECT_DIR$/Portfolio/portfolio.py" />
         <option value="$PROJECT_DIR$/Blog/blog.py" />
         <option value="$PROJECT_DIR$/Loja/loja.py" />
-        <option value="$PROJECT_DIR$/ViewsLibraries.py" />
-        <option value="$PROJECT_DIR$/Ek/views.py" />
         <option value="$PROJECT_DIR$/Pesquisar/spotify.py" />
         <option value="$PROJECT_DIR$/Pesquisar/views.py" />
         <option value="$PROJECT_DIR$/serializers.py" />
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/templates/Ek/ek.html" />
-        <option value="$PROJECT_DIR$/templates/geral.html" />
         <option value="$PROJECT_DIR$/templates/base_store.html" />
         <option value="$PROJECT_DIR$/templates/Loja/album.html" />
-        <option value="$PROJECT_DIR$/EKLETIK/settings.py" />
+        <option value="$PROJECT_DIR$/Blog/views.py" />
+        <option value="$PROJECT_DIR$/Portfolio/views.py" />
+        <option value="$PROJECT_DIR$/Loja/views.py" />
+        <option value="$PROJECT_DIR$/Ek/views.py" />
+        <option value="$PROJECT_DIR$/ViewsLibraries.py" />
+        <option value="$PROJECT_DIR$/Serializers.py" />
+        <option value="$PROJECT_DIR$/Ek/api_views.py" />
+        <option value="$PROJECT_DIR$/Blog/models.py" />
         <option value="$PROJECT_DIR$/EKLETIK/urls.py" />
+        <option value="$PROJECT_DIR$/templates/geral.html" />
+        <option value="$PROJECT_DIR$/EKLETIK/settings.py" />
+        <option value="$PROJECT_DIR$/templates/Ek/portfolio-item.html" />
       </list>
     </option>
   </component>
@@ -144,9 +450,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
+    <option name="y" value="535" />
     <option name="width" value="1680" />
-    <option name="height" value="682" />
+    <option name="height" value="511" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -200,7 +506,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="EKLETIK" />
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Ek" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -488,15 +798,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="682" extended-state="0" />
+    <frame x="0" y="535" width="1680" height="511" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12271062" sideWeight="0.48859936" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.123931624" sideWeight="0.48859936" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32767403" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30788177" sideWeight="0.50549453" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3078759" sideWeight="0.50549453" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32923368" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37966102" sideWeight="0.49564585" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37947494" sideWeight="0.49564585" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293556" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32767403" sideWeight="0.49718705" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38181818" sideWeight="0.4945055" order="9" side_tool="false" content_ui="tabs" />
@@ -532,13 +842,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ek_static/css/blog.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="48" column="23" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="67" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ek_static/css/services.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="249">
@@ -710,14 +1013,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/Ek/portfolio-item.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="508">
-          <caret line="71" column="49" lean-forward="false" selection-start-line="71" selection-start-column="49" selection-end-line="71" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/Ek/empresa.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="508">
@@ -742,20 +1037,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="51" column="19" lean-forward="true" selection-start-line="51" selection-start-column="19" selection-end-line="51" selection-end-column="19" />
-          <folding>
-            <element signature="e#158#396#0" expanded="false" />
-            <element signature="e#438#950#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Blog/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding>
-            <element signature="e#54#83#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -763,14 +1045,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Blog/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="84" column="6" lean-forward="true" selection-start-line="84" selection-start-column="6" selection-end-line="84" selection-end-column="6" />
           <folding>
             <element signature="e#54#82#0" expanded="false" />
             <element signature="e#217#410#0" expanded="false" />
@@ -782,36 +1056,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Portfolio/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Loja/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="24" column="1" lean-forward="false" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ek/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="74" column="53" lean-forward="true" selection-start-line="74" selection-start-column="53" selection-end-line="74" selection-end-column="53" />
-          <folding>
-            <element signature="e#54#93#0" expanded="true" />
-            <element signature="e#430#560#0" expanded="false" />
-            <element signature="e#585#787#0" expanded="false" />
-            <element signature="e#818#903#0" expanded="false" />
-            <element signature="e#928#1332#0" expanded="false" />
-            <element signature="e#1360#1463#0" expanded="false" />
-            <element signature="e#1492#1816#0" expanded="false" />
-            <element signature="e#1843#1952#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -838,9 +1087,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-303">
           <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding>
-            <element signature="e#54#82#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -848,25 +1094,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Azinca/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="8" lean-forward="false" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ViewsLibraries.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="3" lean-forward="true" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
-          <folding>
-            <element signature="e#55#94#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -874,14 +1101,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="13" lean-forward="true" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/geral.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3345">
-          <caret line="223" column="0" lean-forward="true" selection-start-line="223" selection-start-column="0" selection-end-line="223" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -894,21 +1113,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Loja/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="69" column="8" lean-forward="false" selection-start-line="69" selection-start-column="8" selection-end-line="69" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/Loja/album.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="29">
           <caret line="9" column="9" lean-forward="false" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
-          <folding>
-            <element signature="n#div#0;n#!!top" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -934,36 +1143,139 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Serializers.py">
+    <entry file="file://$PROJECT_DIR$/Blog/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="22" lean-forward="true" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+        <state relative-caret-position="250">
+          <caret line="106" column="0" lean-forward="false" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
           <folding>
-            <element signature="e#70#108#0" expanded="true" />
+            <element signature="e#54#82#0" expanded="false" />
+            <element signature="e#217#410#0" expanded="false" />
+            <element signature="e#490#1225#0" expanded="false" />
+            <element signature="e#1303#1438#0" expanded="false" />
+            <element signature="e#1511#2069#0" expanded="false" />
+            <element signature="e#2135#2235#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EKLETIK/settings.py">
+    <entry file="file://$PROJECT_DIR$/Azinca/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state relative-caret-position="60">
+          <caret line="5" column="8" lean-forward="false" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Portfolio/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
           <folding>
-            <element signature="e#593#900#0" expanded="false" />
-            <element signature="e#915#1314#0" expanded="false" />
-            <element signature="e#1359#1874#0" expanded="false" />
-            <element signature="e#1935#2063#0" expanded="false" />
-            <element signature="e#2092#2488#0" expanded="false" />
+            <element signature="e#54#82#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Loja/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="113" column="0" lean-forward="false" selection-start-line="113" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ek/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="53" />
+          <folding>
+            <element signature="e#430#560#0" expanded="false" />
+            <element signature="e#585#787#0" expanded="false" />
+            <element signature="e#818#903#0" expanded="false" />
+            <element signature="e#928#1332#0" expanded="false" />
+            <element signature="e#1360#1463#0" expanded="false" />
+            <element signature="e#1492#1816#0" expanded="false" />
+            <element signature="e#1843#1952#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="24" lean-forward="false" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
+          <folding>
+            <element signature="e#70#124#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ViewsLibraries.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="25" lean-forward="false" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+          <folding>
+            <element signature="e#55#94#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Blog/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/geral.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="104" column="58" lean-forward="true" selection-start-line="104" selection-start-column="58" selection-end-line="104" selection-end-column="58" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/EKLETIK/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="71" column="45" lean-forward="true" selection-start-line="71" selection-start-column="45" selection-end-line="71" selection-end-column="45" />
+        <state relative-caret-position="178">
+          <caret line="85" column="51" lean-forward="true" selection-start-line="85" selection-start-column="51" selection-end-line="85" selection-end-column="51" />
           <folding>
             <element signature="e#110#142#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ek/api_views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="11" lean-forward="false" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EKLETIK/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="70" column="0" lean-forward="true" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+          <folding>
+            <element signature="e#592#899#0" expanded="false" />
+            <element signature="e#914#1313#0" expanded="false" />
+            <element signature="e#1358#1873#0" expanded="false" />
+            <element signature="e#1934#2062#0" expanded="false" />
+            <element signature="e#2091#2487#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Ek/portfolio-item.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="79" column="19" lean-forward="true" selection-start-line="79" selection-start-column="19" selection-end-line="79" selection-end-column="19" />
+          <folding>
+            <element signature="n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#p#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#2;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

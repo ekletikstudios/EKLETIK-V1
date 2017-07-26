@@ -24,6 +24,8 @@ from Portfolio import views as P
 from Loja import views as L
 from Receitas import views as R
 from Pesquisar import views as Pesquisar
+from Ek import api_views as api
+
 
 # Importing REST API
 from rest_framework.urlpatterns import format_suffix_patterns
@@ -69,17 +71,18 @@ urlpatterns = [
     url(r'^pesquisar/', Pesquisar.Pesquisar, name='Pesquisar'),
 
     # Developer APIs
-    url(r'^api/albums', L.AlbumListAPI.as_view()),
-    url(r'^api/articles', B.ArtigoListAPI.as_view()),
-    url(r'^api/artigos', B.ArtigoListAPI.as_view()),
-    url(r'^api/people', EK.PessoaListAPI.as_view()),
-    url(r'^api/pessoas', EK.PessoaListAPI.as_view()),
-    url(r'^api/portfolio', P.PortfolioListAPI.as_view()),
-    url(r'^api/projectos', P.PortfolioListAPI.as_view()),
-    url(r'^apis/', EK.Brevemente, name='apis'),
-    url(r'^api/', EK.Brevemente, name='api'),
+    url(r'^api/albums', api.AlbumListAPI.as_view()),
+    url(r'^api/articles/(?P<pk>\d+)', api.ArtigoDetailAPIView.as_view()),
+    url(r'^api/articles', api.ArtigoListAPIView.as_view()),
+    url(r'^api/artigos', api.ArtigoListAPI.as_view()),
+    url(r'^api/people', api.PessoaListAPI.as_view()),
+    url(r'^api/pessoas', api.PessoaListAPI.as_view()),
+    url(r'^api/portfolio', api.PortfolioListAPI.as_view()),
+    url(r'^api/projectos', api.PortfolioListAPI.as_view()),
 
     # Coming Soon...
+    url(r'^api/', EK.Brevemente, name='api'),
+    url(r'^apis/', EK.Brevemente, name='apis'),
     url(r'^azinca/', EK.Brevemente, name='azinca'),
     url(r'^receitas/', EK.Brevemente, name='receitas'),
     url(r'^vimos/', EK.Brevemente, name='vimos'),

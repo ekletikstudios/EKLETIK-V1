@@ -42,12 +42,3 @@ def portfolioNext(request, id):
 
 
 
-# API Views...
-class PortfolioListAPI(APIView):
-    def get(self, request):
-        projecto = Projecto.objects.all().filter(status='p').order_by('data')
-        serializer = PortfolioSerializer(projecto, many=True)
-        return Response(serializer.data)
-
-    def post(self):
-        pass

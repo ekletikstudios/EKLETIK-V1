@@ -73,14 +73,3 @@ def pedido(request):
 
 
 #####################################################
-
-
-# API Views...
-class PessoaListAPI(APIView):
-    def get(self, request):
-        pessoa = Pessoa.objects.all().filter(status='p').order_by('id')
-        serializer = PessoaSerializer(pessoa, many=True)
-        return Response(serializer.data)
-
-    def post(self):
-        pass

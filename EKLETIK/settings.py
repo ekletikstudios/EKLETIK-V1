@@ -99,11 +99,14 @@ USE_TZ = True
 
 
 # Static files (CSS, JavaScript, Images)
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'ek_static'),]
+#STATIC_ROOT = os.path.join(BASE_DIR, 'ek_static')
+STATIC_ROOT = '/var/www/ekletik.com/ek_static/'
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'ek_media')
+#MEDIA_ROOT = '/var/www/ekletik.com/ek_media/'
+
+
 STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
 
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'ek_static'),]
-STATIC_ROOT = 'var/www/ekletik.com/ek_static/'
-
-#MEDIA_ROOT = os.path.join(BASE_DIR, 'ek_media')
-MEDIA_ROOT = '/var/www/ekletik.com/ek_media/'

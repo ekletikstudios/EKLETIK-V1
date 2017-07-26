@@ -16,7 +16,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '9+$8!kj9c*t8ezyu)5sorlv&forlc#@kv1_z!b8vmnl(7^g$cj'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['.ekletik.com', '127.0.0.1', '.localtunnel.me']
 

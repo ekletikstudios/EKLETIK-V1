@@ -71,8 +71,11 @@ urlpatterns = [
     # Developer APIs
     url(r'^api/albums', L.AlbumListAPI.as_view()),
     url(r'^api/articles', B.ArtigoListAPI.as_view()),
+    url(r'^api/artigos', B.ArtigoListAPI.as_view()),
+    url(r'^api/people', EK.PessoaListAPI.as_view()),
     url(r'^api/pessoas', EK.PessoaListAPI.as_view()),
     url(r'^api/portfolio', P.PortfolioListAPI.as_view()),
+    url(r'^api/projectos', P.PortfolioListAPI.as_view()),
     url(r'^apis/', EK.Brevemente, name='apis'),
     url(r'^api/', EK.Brevemente, name='api'),
 

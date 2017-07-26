@@ -5,7 +5,6 @@ from Loja.models import *
 from Blog.models import *
 from Portfolio.models import *
 
-
 def SearchUsers(nome):
     return "User...."
 

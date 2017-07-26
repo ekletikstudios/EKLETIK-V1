@@ -51,7 +51,6 @@ def SearchAlbums(keyword):
         raise Http404('Nada a mostrar')
     return albums
 
-
 def SearchPortfolio(keyword):
     try:
         projectos = Projecto.objects.filter(status='p').filter(nome__contains=keyword)
@@ -65,12 +64,9 @@ def SearchPortfolio(keyword):
         raise Http404("Sem Projectos")
     return projectos
 
-
-
 def SearchContentTypes(pesquisa):
     types = Artigo.objects.all()
     return types
-
 
 
 ################# Search Views....
@@ -80,7 +76,6 @@ def Pesquisar(request):
         'main': 'Pesquisar',
         'pagina': 'Pesquisar',
     })
-
 
 def Results(request):
 

@@ -4,7 +4,9 @@ from django.http import HttpRequest
 from django.shortcuts import render, redirect
 from Blog.models import *
 from Portfolio.models import *
-
+from rest_framework.views import APIView
+from rest_framework.response import Response
+from Serializers import *
 
 #####################################################
 
@@ -73,3 +75,12 @@ def pedido(request):
 #####################################################
 
 
+# API Views...
+class PessoaListAPI(APIView):
+    def get(self, request):
+        pessoa = Pessoa.objects.all().filter(status='p').order_by('id')
+        serializer = PessoaSerializer(pessoa, many=True)
+        return Response(serializer.data)
+
+    def post(self):
+        pass

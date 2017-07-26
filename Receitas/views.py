@@ -1,3 +1,15 @@
-# This Python file uses the following encoding: utf-8
 from ViewsLibraries import *
-# Create your views here.
+from Ek.models import *
+
+# Receitas Views
+def receitas(request):
+    #a = HttpRequest()
+    return render(request, 'Receitas/receitas.html',{
+        'main': 'home',
+        'pagina': 'Receitas',
+        #'id': a,
+    })
+
+
+#####################################################
+
